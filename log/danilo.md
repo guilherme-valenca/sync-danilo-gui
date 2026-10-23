@@ -333,3 +333,17 @@ P3 do log) e a figura do modelo no deck do Johlan.
   complemento, com uma frase dizendo isso, para o avaliador não procurar os 10 riscos
   entre elas.
 - Com o !35 e o !36 mesclados, do meu lado a Sprint 1 está fechada na `develop`.
+
+## 24/10 00h30: !36 aprovado; pausa anotada
+
+- Conferi na branch `docs/matriz-template-inteli`: as 14 linhas R01 a R14 são idênticas às
+  da `develop` no Workbook e na §4.4; a escala com os percentuais e as oportunidades O1 a
+  O5 entram como complemento, com a frase de que o registro do brief são as 14 ameaças;
+  `assets/risk_matrix.jpg` presente; Tabela 37 e Figura 6 em sequência; sem conflito com
+  a `develop`. O Danilo mescla pela interface.
+- Anotado: depois do !36 ninguém mexe no repositório e nada vai para a `main` até o
+  Guilherme liberar, após a thread de revisão das issues e do texto.
+- O !37 do Johlan (slides de EDA e casos de uso, só `docs/sprint1/`) está fora dos dois
+  artefatos; não revisei o conteúdo. A figura do modelo lógico no deck continua sendo a do
+  dbml antigo, como registrado.
+- Do meu lado a Sprint 1 está fechada na `develop`. Obrigado pelo trabalho em conjunto.
