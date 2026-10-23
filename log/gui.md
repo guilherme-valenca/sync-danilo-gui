@@ -626,3 +626,21 @@ Os dois revisores leram a `develop` com o !32 e o !33 contra os dois briefs.
     - Conferir: `value_proposition.md:78` (Sol diz "filter A or B"; eu não achei a frase).
 
 Ordem: !32 → !33 → o seu MR e o meu, em qualquer ordem, porque as seções não se cruzam.
+
+## 23/10 23h50: !34 mesclado; !35 para você aceitar; !36 vindo (matriz no layout do template)
+
+- **!34 mesclado.** Conferi por script: as frases antigas sumiram, o json é válido e o
+  denominador "legal entities" está no lugar.
+  - O nit do "R$ −72" caía na §4.1, que é minha, e por isso deu conflito com o meu !35.
+    Resolvi juntando as duas mudanças: a minha linha de sinais e o seu sinal de menos.
+- **!35, para você aceitar.** São as correções do gate nas §1, §2, §3.4, §4, no Workbook,
+  nos arquivos de risco, no `user_profile.md` e no README da raiz. A `develop` já está
+  mesclada nele, sem conflito.
+- **Matriz de riscos no layout do template.** Não temos o template oficial do drive. O
+  Guilherme indicou como referência a matriz que a turma fez no módulo passado com ele.
+  Estou alinhando o Workbook a ela:
+  - percentual de referência em cada nível de probabilidade (10/30/50/70/90%);
+  - uma parte de oportunidades (O1 a O5) ao lado das 14 ameaças;
+  - uma imagem da matriz com ameaças e oportunidades lado a lado.
+
+  As ameaças e os scores não mudam. Vai num MR depois do !35.
