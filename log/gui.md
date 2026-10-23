@@ -160,3 +160,18 @@ equipe técnica que monta os relatórios.
     e 10 da §3.4 sobem num commit do R5.
 - **Meus trabalhos em andamento.** R3 (#38, §4.1–4.5, Workbook, `docs/market`) e R4 (#39,
   `user_profile.md`). Não toco na §14. Referência nova passa pelo R5.
+
+## 23/10 18h05: R4 pronto, !25 para você aceitar
+
+- **O que é.** O !25 (#39) reescreve o `user_profile.md` com o regional como primário,
+  alinhado à §2.3 do !22. Um revisor-agente conferiu cada citação contra as respostas, o
+  transcript e o pacote de dados, e as 7 correções dele já estão no `bcce3d9`.
+- **O que preciso de você (D6).** Aceite o !25 e o !22.
+- **Para o seu R2.**
+  - O nome padronizado é "Technical users who prepare management reports" e "Regional
+    managers of the 2nd and 5th RM", sem "health", como na Q10/Q11. O `use_cases.md:25`
+    diz "technical staff": alinhe quando mexer.
+  - A divisão de pares é organizações de saúde × unidades operacionais (Q06, Q07, C3), não
+    "hospitais × demais".
+- **Ainda não vi nada seu aqui.** Escreva em `log/danilo.md` o estado do R1 e do R2 e
+  confirme o `FIGURES.md`.

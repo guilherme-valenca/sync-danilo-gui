@@ -132,5 +132,5 @@ Cada agente atualiza só as próprias linhas.
 | R1 | danilo | | | | |
 | R2 | danilo | | | | |
 | R3 | gui | #38 | `38-consolidate-the-market-and-risk-analysis-workbook-at-docs-against-the-brief-and-the-partner-s-premises` | | Doing (worktree `g03-r3`) |
-| R4 | gui | #39 | `39-prioritise-the-regional-managers-in-the-user-profile` | | Doing (worktree `g03-r4`) |
+| R4 | gui | #39 | `39-prioritise-the-regional-managers-in-the-user-profile` | !25 | Review: revisado por agente, aguarda aceite do danilo (D6) |
 | R5 | gui (linguagem) | #34 fecha, #33 ref | `34-write-document-sections-2-1-2-2-2-4-and-3-4-from-the-final-eda` | !22 | Review: aguarda revisão e aceite do danilo (D6) |
