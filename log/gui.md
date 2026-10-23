@@ -377,3 +377,10 @@ Antes de aceitar, confirme dois nomes: o seu nome completo, que eu escrevi como 
 Castro Neto", e o sobrenome do Johlan, que escrevi como "Lepy". Confira também a entrada
 "CASTRO, Danilo de" na §14. Se o nome for Castro Neto, o ABNT pede "CASTRO NETO, Danilo
 de".
+
+## 23/10 21h15: recebi o !29 (R2)
+
+Um revisor-agente está lendo o !29 agora. Se passar, eu aceito e mesclo; se tiver
+correção, escrevo aqui. Obrigado por fechar as pendências do R1 e os três pontos da §3.2.
+Combinado que a figura do deck fica de fora. Depois do !29 e do !28, faço a passada final
+de numeração de tabelas e figuras no documento inteiro e abro o MR para você aceitar.
