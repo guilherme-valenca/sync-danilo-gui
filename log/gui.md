@@ -310,3 +310,58 @@ A linha 30 do `FIGURES.md` está atualizada: 14 riscos, 7 críticos e 7 altos, c
   As correções dele estão em `1823feb` e `8ea399e`.
 - **Conflitos.** Não há conflito textual com o !22, o !25 nem o !26 (`merge-tree`).
 - **Peço (D6).** Revise e aceite.
+
+## 23/10 20h20: !26 aceito e mesclado; o que sobrou do R1 vai no R2
+
+O meu revisor deu "merge after small fixes". Como tudo é texto e o seu R2 já parte do R1,
+mesclei o !26 e peço que as correções entrem no R2. Linhas da `develop` atual:
+
+1. **47 células sem causa (Q31).** Diga "have no identified cause yet" nestes lugares:
+   - `documentation.md:318`, com "agree within R$ 0.05, a tolerance chosen for the
+     analysis";
+   - `analysis.md:68`;
+   - célula markdown 45 do 02;
+   - `data_quality_log.md:21` (R1), com "Not identified yet (Q31 asks for a cause per
+     difference); …".
+2. **"To the cent" e exageros que sobraram.**
+   - `data/README.md:150`: "within R$ 0.05 (99.8%); Q31 asks for agreement to the cent".
+   - Célula markdown 24 do 02: troque "(cent rounding)" por "a tolerance chosen for this
+     analysis; Q31 asks for agreement to the cent".
+   - Célula 0 do 02: "explains every difference" vira "records every difference".
+   - §3.3:322: "within R$ 0.05 in 99.5% of cells".
+3. **Rótulo "all budget actions" faltando.**
+   - 56,8% em `documentation.md:320`, `analysis.md:69`, `data_quality_log.md:26` e na
+     célula 45 do 02.
+   - 39,8% em `data_quality_log.md:47`.
+   - 43,2% em `documentation.md:208` e `:425`.
+4. **Células markdown dos notebooks.**
+   - 04 célula 15: "per full CNPJ, so it is a lower bound".
+   - 03 célula 23: os três `org_type = Saúde` são os hospitais HMASP, HGeC e HGuFl, contra
+     as outras 64 unidades. Tire "barracks, schools and logistics".
+   - 03 células 1 e 34: "563 base UGs" não confere; o 01 imprime 462. Use "every Army base
+     UG with health spending".
+   - 04 célula 25: "explains it" vira "explains when the jump starts".
+5. **Saídas geradas por código.** Os literais dos code cells e as saídas salvas ainda
+   contêm "pilot grows less", "referral vs in-house (report 9)", "without competitive
+   bidding", "Median 30 days" sem ressalva, "match to the cent" e "issue #13/#14", e
+   re-executar sobrescreve os `*_findings.md` corrigidos. Pelo D4 isso vai para a Sprint
+   2. Se você tiver o ambiente pronto e tempo, trocar os literais e re-executar fecha o
+   ponto hoje; a decisão é sua. Se não, registre uma linha no `data_quality_log.md`.
+6. **15ª Bda com dois conjuntos de números na §3.3.**
+   - `documentation.md:341` traz valores reais (R$ 40 mil para 5,7 mi e 10–13 mi) que não
+     estão no `FIGURES.md`.
+   - Troque a oração por "such as the 15th Mechanized Infantry Brigade, whose health
+     spending jumps from 2019 (Section 3.3.6)".
+7. **Voz passiva e outros detalhes.**
+   - Voz passiva criada ao tirar "the team": `documentation.md:302` "Rebuilding the rule
+     from the raw data gives eight budget actions…" e `:196` "**The initial load in use.**".
+   - Dois-pontos no meio da frase: §3.3:259 e :322, `analysis.md:110`, 04 célula 27.
+   - "the module": `data_quality_log.md:3`, `prompts.md:3` e a fonte da Tabela 13.
+   - "the team" (`data/README.md:70`), "our pipeline" (`data/README.md:68`, 01 célula 17)
+     e "Inteli" (`data/README.md:11`).
+   - Faixa do gap: unifique "1% to 9%" × "1% to 6%" × "0.9% to 6.5%".
+   - "61% by auction" em hospitais não está no `FIGURES.md`; use "37% inexigibility".
+   - `prompts.md` não é linkado de lugar nenhum.
+
+Sobre a figura do deck do Johlan: anotado. Ela fica para quem mexer nos slides, fora do
+escopo dos dois artefatos.
