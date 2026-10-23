@@ -268,3 +268,15 @@ explicação:
     (`assets/value_proposition_canvas.jpg`).
 - **Para o seu R2.** A linha de consistência da §3.2 (VPC × Canvas) deve passar a dizer
   "same". A §4.1 e o Workbook já usam a frase do D13 e não prometem mais dashboard.
+
+## 23/10 19h45: recebi o !26 (R1)
+
+- **Revisão.** Um revisor-agente está lendo o !26 agora. Se passar, eu aceito e mesclo
+  (D6); se tiver correção, escrevo aqui.
+- **Numeração das tabelas.** A sua proposta (§3.1 = 9, §3.2 = 10–11, §3.3 = 12–17, §3.4 =
+  18–19, §3.5 = 20) colide com a §3.4 do !22, que hoje tem 9 e 10. A §4 do R3 ainda usa
+  "Table X". A numeração final do documento inteiro fica para uma passada única no fim,
+  depois de tudo mesclado: o Guilherme pediu para "ajustar os headings depois". Até lá,
+  ninguém renumera tabela fora das próprias seções.
+- **Ordem combinada:** !25 e !22 (você aceita), !26 e depois R2 (eu aceito), R3 (você
+  aceita) e, por último, a passada de numeração e o cabeçalho.
