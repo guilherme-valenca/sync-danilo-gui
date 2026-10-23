@@ -34,6 +34,8 @@ nossas correções partem de uma base única.
 
 **Ordem:** !4 → !13 → !14 → !7 → !15 → !18 → MR dos notebooks → !21 → !20 → !19 → !17 → !11.
 
+**Progresso (23/10, 16h55):** os humanos já mergearam !4, !13, !14, !7 e !15 (16h39). O !21 já aponta para a `develop`. Faltam: abrir o MR dos notebooks, depois !18, notebooks, !21, !20, !19, !17 e !11.
+
 - Quem aceita: gui, inclusive os dois do Danilo.
 - Fora: !16 (a branch dos slides nunca chegou ao servidor; é do Johlan) e !12 (fechado).
 - Apagar a branch `docs/spark-notebook`, que está vazia.
@@ -50,8 +52,8 @@ Ninguém edita arquivo ou seção do outro.
 | R1 | danilo | Correct the Spark analysis and Section 3.3 against the partner's reconciliation and scope rules | Notebooks (só células markdown, sem re-executar), `analysis.md`, `outputs/*_findings.md`, `data/README.md`, `documentation.md` §3.3 |
 | R2 | danilo | Align the Data Model Canvas components with the corrected analysis | `value_proposition.md`, `use_cases.md`, `canvas.md`, `data_model_canvas.json`, `data_structure.md`, `model.dbml`, `model.png`, `documentation.md` §3.1, §3.2 e §3.5 |
 | R3 | gui | Consolidate the Market and Risk Analysis Workbook at /docs against the brief and the partner's premises | `docs/Market-and-Risk-Analysis-Workbook.md`, `docs/market/*`, `documentation.md` §4.x e §14, `assets/` |
-| R4 | gui | Prioritise the regional managers in the User Profile and Section 2.3 | `user_profile.md`, `documentation.md` §2.3 |
-| R5 | gui | Thread de linguagem já em andamento (#33/#34) | `documentation.md` §1, §2.1, §2.2, §2.4 e §3.4, e o `README.md` do DMC no fim |
+| R4 | gui | Prioritise the regional managers in the User Profile | `user_profile.md`, alinhado à §2.3 do R5 |
+| R5 | gui (thread de linguagem) | Issues #34 (fecha) e #33 (referencia) | `documentation.md` §1.1–1.3, §2.1–2.4, §3.4 e §14 References; no fim, o `README.md` do DMC |
 
 **Dependências:**
 - R2, R3 e R5 citam números só do `FIGURES.md`. O danilo fecha os números **antes** de
@@ -72,6 +74,27 @@ Ninguém edita arquivo ou seção do outro.
    - números iguais ao `FIGURES.md`;
    - grep abaixo vazio.
 2. `develop` → `main` pelo grupo, no fim da sprint.
+
+## Voz da documentação (regra do Guilherme, vale para todas as seções e para o Workbook)
+
+- O texto é a entrega de um contratado ao Exército e é tudo o que o leitor do Exército recebe.
+- Nunca mencionar número de grupo, sprint, entrega/deliverable, TAPI, Inteli como relação
+  de curso, "the team" nem links de issue.
+- Kick-off e datas reais aparecem só na lista de referências (§14). Citação inline por
+  Q-número é aceita.
+- Escopo e objetivos aparecem como dados do projeto, não como "o parceiro definiu". Só a
+  §2.2 fala das necessidades do parceiro.
+- Sem travessões, sem dois-pontos no meio da frase, voz ativa.
+- Links relativos. As URLs do GitLab contêm o nome do grupo.
+- Exceção do Workbook: o brief exige um membro responsável por risco, então os nomes ficam
+  como donos. O que se evita é a forma "the team".
+
+## Dono da §14 References
+
+É o R5. Ao recriar a branch a partir da `develop` pós-Fase 0, o R5 **mantém todas as
+referências que já estiverem lá**, como as S1–S15 e P1–P2 do !19 (âncoras `#ref-s*` e
+`#ref-p*`, que a §4.3 usa) e as que o R1 ou o R3 acrescentarem. Quem precisar de uma
+referência nova manda a entrada pelo log.
 
 ## Padrão Inteli (vale para tudo da Fase 1)
 
@@ -105,9 +128,9 @@ Cada agente atualiza só as próprias linhas.
 
 | Id | Dono | Issue | Branch | MR | Estado |
 |---|---|---|---|---|---|
-| F0 | gui | — | — | — | aguardando consenso |
+| F0 | humanos + gui | — | — | — | em andamento: 5 de 12 mergeados |
 | R1 | danilo | | | | |
 | R2 | danilo | | | | |
 | R3 | gui | | | | |
 | R4 | gui | | | | |
-| R5 | gui | #33/#34 | (recriar) | | em andamento (thread de linguagem) |
+| R5 | gui (linguagem) | #34 fecha, #33 ref | `34-…` a criar pós-Fase 0 | | seções reescritas na worktree `g03-docs`, sem commit; 3ª revisão rodando (§2.3) |

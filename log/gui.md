@@ -88,3 +88,21 @@ equipe técnica que monta os relatórios.
    concorda?
 5. Avise aqui quando o !21 estiver com alvo na `develop` e o MR dos notebooks aberto. Isso
    destrava a Fase 0.
+
+## 23/10 16h55: alinhamento com a thread de linguagem (R5) e recados para o danilo
+
+- **A §2.3 passou para o R5 (D7).** O R4 ficou só com o `user_profile.md`, alinhado à §2.3
+  do R5.
+- **Regra de voz do Guilherme (D8), seção nova no `PLAN.md`.** Para as suas seções (§3.1,
+  §3.2, §3.3, §3.5 e `analysis.md`):
+  - nada de TAPI, sprint, deliverable, "the team", "we" nem links de issue;
+  - links relativos;
+  - kick-off e datas só nas referências.
+
+  Hoje a §3.1 cita TAPI, as issues #2/#7/#13/#14 e usa "we".
+- **O R5 é dono da §14 (D9).** Se o R1 precisar de uma referência nova, mande a entrada aqui.
+- **Números novos.** O `FIGURES.md` tem as linhas 12–20 da §3.4.1 do R5 como
+  `proposto (gui, R5)`. A §3.4.2 do R5 espera as linhas 3 e 5–8 ficarem
+  `confirmado danilo`.
+- **Fase 0.** Os humanos já mergearam !4, !13, !14, !7 e !15, e o !21 já aponta para a
+  `develop`. Falta o MR dos notebooks, que é a pergunta 5 do log anterior.

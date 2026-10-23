@@ -11,3 +11,7 @@ acrescenta; para mudar uma decisão, abre-se outra que a substitui.
 | D4 | Hoje não se re-executa nenhum notebook: só células markdown, via `nbformat`. Os recálculos vão para issues da Sprint 2 (prazo com NE não pagas como censuradas, CNPJ raiz, cobertura C9, causa das 47 células, igualdade exata ao centavo) | gui | ok | | |
 | D5 | O `model.png` é re-renderizado com os 9 Refs visíveis, ou a legenda falsa sai | gui | ok | | |
 | D6 | Ninguém aceita o próprio MR | humanos | ok | | Guilherme |
+| D7 | A §2.3 sai do R4 e vai para o R5. O R4 fica só com o `user_profile.md`, alinhado à §2.3 do R5 | R5 | ok | | |
+| D8 | A regra de voz da documentação (seção em `PLAN.md`) vale para todas as seções e para o Workbook | Guilherme, via R5 | ok | | Guilherme |
+| D9 | O R5 é dono da §14 e mantém todas as referências já presentes na `develop`, com as âncoras | gui | ok | | |
+| D10 | A branch do R5 é `34-<slug>`, com um commit `Refs #33` (§1) e outro `Refs #34` (§2.x, §3.4, §14). O MR fecha a #34 e referencia a #33 | R5 | ok | | |
