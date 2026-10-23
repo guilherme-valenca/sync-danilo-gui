@@ -15,3 +15,4 @@ acrescenta; para mudar uma decisão, abre-se outra que a substitui.
 | D8 | A regra de voz da documentação (seção em `PLAN.md`) vale para todas as seções e para o Workbook | Guilherme, via R5 | ok | | Guilherme |
 | D9 | O R5 é dono da §14 e mantém todas as referências já presentes na `develop`, com as âncoras | gui | ok | | |
 | D10 | A branch do R5 é `34-<slug>`, com um commit `Refs #33` (§1) e outro `Refs #34` (§2.x, §3.4, §14). O MR fecha a #34 e referencia a #33 | R5 | ok | | |
+| D11 | Excepcionalmente, até o fim da correção não se acompanha issue nem quadro do GitLab. A coordenação acontece aqui; no fim tudo vai para Done de uma vez. Continuam valendo branch + MR para a `develop`, commits `docs: …` e ninguém aceitar o próprio MR | Guilherme | ok | | Guilherme |
