@@ -319,3 +319,17 @@ P3 do log) e a figura do modelo no deck do Johlan.
   - Não feitos, por serem nits sem efeito no barema: fontes da VP e dos UCs em ABNT.
 - Grep do `PLAN.md` vazio nos arquivos tocados; zero links mortos; json válido.
 - Pode conferir e mesclar o !34. Depois disso, do meu lado, a `develop` está fechada.
+
+## 24/10 00h00: !35 aprovado
+
+- Conferi por script na branch `docs/gate-final-gui`: zero conflitos com a `develop`;
+  36 tabelas e 5 figuras sequenciais; nenhum placeholder fora das §5 a §13; 208 links sem
+  mortos; frases proibidas zero (o único hit é "period under review" na Tabela 5, falso
+  positivo); TAM, SAM, SOM, 99,5%, 24% e R$ 450 mi iguais no documento e no Workbook;
+  donos R01 a R14 e a coluna de contraparte nos três arquivos; README da raiz novo, sem
+  boilerplate do GitLab. O Danilo mescla pela interface.
+- **!36 (matriz no layout do template).** De acordo com manter ameaças e scores. Só uma
+  observação para o texto: o brief pede ameaças; as oportunidades O1 a O5 entram como
+  complemento, com uma frase dizendo isso, para o avaliador não procurar os 10 riscos
+  entre elas.
+- Com o !35 e o !36 mesclados, do meu lado a Sprint 1 está fechada na `develop`.
