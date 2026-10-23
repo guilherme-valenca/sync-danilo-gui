@@ -1,0 +1,90 @@
+# log do gui
+
+## 23/10 16h40: proposta inicial e o meu contexto
+
+Propus o plano em `PLAN.md`, os números em `FIGURES.md` e as decisões D1–D6 em
+`DECISIONS.md`. Abaixo está o que os meus revisores (Opus, checados contra os briefs e o
+kick-off) acharam em cada área. Compare com o seu contexto e diga onde discorda. As linhas
+mudam depois da Fase 0, então cito pela frase.
+
+### R1 (danilo): análise e §3.3
+
+- **Inferência proibida (annex §4, Q35).** `documentation.md` §3.3, "approximates a move
+  from external referral to in-house care". Também está em `analysis.md` ("PI-SSEx report
+  9"), na célula 27 do 03 e em `03_eda_findings.md`.
+- **Reconciliação.** O código usa `<= 0.05` (02, células 23–24), mas o texto diz "match to
+  the cent" em §3.3, `analysis.md` e `data/README.md`. As 47 células não têm causa. O título
+  "The data can be trusted, with known limits" promete demais diante da Q31.
+- **Perímetro.** As 8 ações não são nomeadas como filtro B (Q20) e o C9 não aparece. Há uma
+  agência de turismo no rank 48 dos fornecedores de saúde.
+- **Números de todas as ações sem rótulo.** 39,8% e 56,8% aparecem sob títulos de saúde.
+  "Most payments settle 2025 notes" não é o que a célula 38 do 02 mostra (~36%).
+- **Q02 trocada.** `analysis.md`: "why the pilot grows less than the Army". O total do
+  Exército inclui executores centrais (C10, Q43), então a comparação não é equivalente.
+- **Prazo, concentração e 15ª Bda.** O prazo exclui os 17,4% não pagos. A concentração é
+  por CNPJ completo. "Not new spending" é refutado pela própria célula 25 do 04.
+- **"Health is bought mostly without competitive bidding"** em `analysis.md`: trocar por
+  inexigibilidade/credenciamento.
+- **Placeholders** "Table X / Figure X" em §3.3.
+
+### R2 (danilo): componentes do DMC
+
+- **André** (`value_proposition.md`, `use_cases.md`, `canvas.md`, json, §3.2, §3.5):
+  - 39,8% usado como saúde: trocar pela linha 4.
+  - 30 dias sem a ressalva.
+  - Exemplo da 15ª Bda em `canvas.md`.
+  - UC2 pede favorecidos de vários anos, mas só existe 2026H1. UC1 faz drill-down de
+    setembro, que não tem documentos: usar maio de 2026. UC3 compara com o próprio
+    histórico: usar pares no semestre.
+  - Aviso "how the partner said management works today": os gatilhos não estão no kick-off
+    (Q12, Q13).
+  - C9 ausente nos UCs.
+  - `canvas.md` "matches the User Profile: Yes" deve virar "partly".
+  - Status das entradas em `canvas.md` desatualizado após a Fase 0.
+  - Nits: "accreditation 53.5%" → "inexigibility"; "of 2,259" → "legal-entity suppliers";
+    json "unit-months" → "unit-years".
+- **Antoine** (`data_structure.md`, `model.dbml`, `model.png`, §3.1):
+  - O PNG não tem linhas, mas a legenda diz "Solid lines: reviewed source relationships".
+    O dbml tem 13 tabelas e 9 Refs.
+  - "reviewed EDA evidence from #13" deve virar "preliminary".
+  - A tabela mensal se chama "governed panel", mas o Parquet governado
+    (`02_CURATED_EXECUCAO/03_painel_mensal_...`) tem grão (base_ug, competencia) e não tem
+    ação, PO, elemento nem GND. Os códigos só vêm de `01_RAW_EXECUCAO`. Ajustar as notas.
+  - Falta a etapa de recorte da pilotagem e do escopo de saúde (filtro A/B) no fluxo de
+    `data_structure.md`. O mensal bruto cobre o executivo federal inteiro.
+  - `data_structure.md` diz "no G03 Spark run … is asserted" e logo depois cita a EDA.
+  - Link morto em `documentation.md` §3.1, para a branch `15-create-…` que não existe mais.
+  - Sprint 2 (não hoje): 160 vs 167, linhagem antecessor/sucessor, ano de origem dos RP
+    (C7), 9 famílias documentais reais, escala para 12 RMs.
+
+### R3 (gui): Workbook, §4.1 e §4.3
+
+- **!17.** Arquivo na raiz; "Person N"; sem matriz 5×5; sem imagem do VPC; resíduos de
+  rascunho. Sem nenhum risco de equipe, que o brief exige. Faltam o validador indisponível
+  (Q45/Q32), o perímetro do Relatório IX (Q34), as correções do Tesouro até o dia 5 e a
+  adoção sem orçamento (Q46/Q48). R09 com P baixa: o C5 tem CPF. Q47/Q48 citadas como
+  "escala".
+- **!19.** Ainda precifica Tableau/Power BI sem tratar a premissa aberta. Resíduo "version
+  2" (§4.3.4). Top-down de R$ 2,04 bi sem fonte. 1 viewer por UG.
+- **§4.1.** "Comando Militar de Saúde"; "fonte única de verdade"; falta o job central
+  (filtro A/B, variação e concentração por objeto e favorecido); resíduo "Como editar";
+  está em português.
+
+### R4 (gui): `user_profile.md` e §2.3
+
+`user_profile.md` dá o mesmo peso aos três níveis. O parceiro diz que o regional é o
+primário (Q10–Q11) e que DGP, D Sau e DPGO são secundários. Faltam o PI-SSEx como base e a
+equipe técnica que monta os relatórios.
+
+### Perguntas para você (danilo)
+
+1. Concorda com D1–D5 e com a divisão R1–R5? Se quiser trocar alguma área, diga qual e por
+   quê.
+2. Confirme ou corrija cada linha do `FIGURES.md`, principalmente a 4 (24% é de saúde?) e a
+   5.
+3. PNG: você re-renderiza pelo dbdiagram.io a partir do dbml, ou tira a legenda falsa e lista
+   os Refs em texto?
+4. O MR dos notebooks versiona `data/` (~2,2 MB curados, repo privado, sem CPF). Você
+   concorda?
+5. Avise aqui quando o !21 estiver com alvo na `develop` e o MR dos notebooks aberto. Isso
+   destrava a Fase 0.
