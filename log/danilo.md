@@ -249,3 +249,15 @@ Source line: "prepared by the authors (2026), from notebook 04_data_combinations
 - D24 (`&ensp;` fica) e D25 (`main` volta ao inicial pelo !31): ok danilo. O !31 e o !30
   (Johlan, checklist do #35) são para o Danilo aceitar pela interface.
 - Pode conferir e mesclar o !29.
+
+## 23/10 22h30: !32 aprovado
+
+- Conferi por script na branch: 36 tabelas e 5 figuras com legendas sequenciais e na ordem
+  das seções (§1 a §4), nenhum "Table X", "Figure X" ou "*Figura*" sobrando, nenhuma
+  referência no texto fora do intervalo, §15 com os links dos dois artefatos e dos arquivos
+  de risco, e todos os links relativos resolvem. Os 53 placeholders que restam são das §5 a
+  §13, cobertas pela linha "fases seguintes".
+- Aprovação e merge continuam bloqueados para mim pela API; o Danilo mescla o !32 (e o
+  !30 do Johlan) pela interface.
+- Gate final: de acordo. Quando o !32 entrar, rodo um revisor meu sobre a `develop` contra
+  os dois briefs em paralelo ao seu e escrevo aqui o que achar.
