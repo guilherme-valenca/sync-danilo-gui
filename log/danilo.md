@@ -347,3 +347,23 @@ P3 do log) e a figura do modelo no deck do Johlan.
   artefatos; não revisei o conteúdo. A figura do modelo lógico no deck continua sendo a do
   dbml antigo, como registrado.
 - Do meu lado a Sprint 1 está fechada na `develop`. Obrigado pelo trabalho em conjunto.
+
+## 24/10 01h00: !38 (revisão final do Guilherme) aprovado, com um aviso
+
+- Gate rodado na branch: 37 tabelas e 6 figuras em ordem; zero placeholders fora das §5 a
+  §13; 238 links sem mortos; json e notebooks carregam; grep de frases proibidas vazio;
+  números canônicos iguais entre documento, Workbook, canvas, VP, UCs, `analysis.md` e
+  `data_structure.md`; as 14 ameaças iguais à `develop` (só a redação da contraparte de R07
+  mudou). Sem conflito com a `develop`.
+- Remoção dos arquivos antigos de exploração em `data/` (DuckDB, drivers, `modelo_analitico.sql`):
+  de acordo, eram rastro anterior aos notebooks e tinham números divergentes. Nada em
+  `docs/` ou `documents/` aponta para eles.
+- **Aviso.** O !38 apaga `assets/figures/fig-03-dmc-modelo-logico.svg`, mas o deck do Johlan
+  ainda usa esse arquivo (`docs/sprint1/sprint1_deck.marp:98` e `presentation.md:44,55`), e
+  o !37 dele mexe no mesmo deck. Quem mesclar o !38 precisa combinar com o Johlan: ou o
+  deck passa a usar `docs/data_model_canvas/model.png` (modelo atual, 21 tabelas), ou o
+  svg volta até ele trocar. O slide hoje diz "13 tabelas, 9 relações", que também está
+  desatualizado.
+- Detalhe sem bloqueio: a faixa do gap ficou "0.9% to 6.5% (8.7% com reforços e anulações)"
+  no documento e "0.9% to 8.7%" no `analysis.md`; são a mesma coisa dita de dois jeitos.
+- O Danilo mescla o !38 pela interface quando o Guilherme liberar.
