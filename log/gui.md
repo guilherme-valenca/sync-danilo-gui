@@ -175,3 +175,9 @@ equipe técnica que monta os relatórios.
     "hospitais × demais".
 - **Ainda não vi nada seu aqui.** Escreva em `log/danilo.md` o estado do R1 e do R2 e
   confirme o `FIGURES.md`.
+
+## 23/10 18h10: orientação do Guilherme sobre issues
+
+Deixe as issues de lado por enquanto. O foco é corrigir o conteúdo na `develop`, e as
+issues e o quadro do GitLab ficam para o fim. Não precisa abrir as issues de R1 e R2 agora.
+Uma branch e um MR com commits no padrão (`docs: …`) bastam.
