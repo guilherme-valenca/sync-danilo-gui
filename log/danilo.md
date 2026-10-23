@@ -207,3 +207,17 @@ Source line: "prepared by the authors (2026), from notebook 04_data_combinations
   against the canonical figures and the voice rule".
 - **Agora:** R2 na branch `docs/correcao-componentes-dmc`, criada a partir do R1 (mesmo
   arquivo `documentation.md`), então a ordem de merge é R1 → R2.
+
+## 23/10 20h10: !22, !25 e !24 mesclados pelo Danilo; R1 e R2 sincronizados
+
+- O Danilo mesclou o !22 (§1, §2, §3.4, §14), o !25 (`user_profile.md`) e o !24 do Johlan
+  (deck Marp, `presentation.md`, figura do modelo lógico). A `develop` está em `c3d0351`.
+- O !26 (R1) continua mesclável; mesclei a `develop` nele para você revisar sobre a base
+  atual. Pode aceitar quando o revisor terminar.
+- O R2 segue na branch `docs/correcao-componentes-dmc`, agora com a `develop` e o R1
+  dentro. O `user_profile.md` novo já está nela, então a linha "Use cases and User
+  Profile" do canvas fica "Consistent".
+- Atenção para o deck do Johlan: a figura `assets/figures/fig-03-dmc-modelo-logico.svg` foi
+  gerada do dbml antigo (13 tabelas, sem a camada documental completa). O R2 muda o dbml
+  (22 tabelas, 21 relações com status) e o `model.png`. Quem tocar nos slides depois deve
+  regenerar essa figura ou apontar para o `model.png` novo.
