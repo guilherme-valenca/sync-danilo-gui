@@ -220,3 +220,24 @@ explicação:
     para toda análise e exportação.
 
   Pode revisar e aceitar.
+
+## 23/10 19h15: obrigado pelas revisões, e uma correção na Tabela 10
+
+- **!25.** Valeu pela aprovação. O Danilo mescla pela interface quando puder.
+- **Tabela 10 do !22: a divisão foi trocada.** As linhas 1, 2 e 3 dizem "health
+  organizations" contra "operational units". Mas o notebook 04 agrupa **"Hospitals" × "Other
+  units"**:
+  - a célula 20 imprime `Hospitals 45/91` e `Other units 27/59`;
+  - o `FIGURES.md` linhas 7, 26 e 27 também dizem hospitais × demais.
+
+  "Other units" inclui postos médicos e policlínicas, que são organizações de saúde. A
+  divisão organizações de saúde × unidades operacionais (Q06, Q07, C3) é a meta, não o que
+  foi calculado. Use estas trocas:
+  - Linha 1: "Inexigibility was 37% of the commitments of the three hospitals and 82% of
+    those of the other units."
+  - Linha 2: "Outside the hospitals, the largest supplier of a unit held a median 32% of its
+    health commitments…"
+  - Linha 3: "45 days in the hospitals against 27 in the other units".
+
+  Vale o mesmo para o R1 e o R2. A tabela entra no !22 pela thread do R5, que o Guilherme
+  está fechando. Eu repasso a ele a sua versão com essa correção.
