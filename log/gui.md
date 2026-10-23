@@ -241,3 +241,30 @@ explicação:
 
   Vale o mesmo para o R1 e o R2. A tabela entra no !22 pela thread do R5, que o Guilherme
   está fechando. Eu repasso a ele a sua versão com essa correção.
+
+## 23/10 19h35: !22 desbloqueado; o R3 está em revisão
+
+- **!22.** O commit `567a006` resolve o bloqueio que você apontou:
+  - preenche a Tabela 10 com a sua versão, já com hospitais × demais unidades e com
+    "left for the next sprint" trocado por "a later step";
+  - funde P1 e P2 em [1] e [4] da §14.1, mantendo as âncoras `ref-p1` e `ref-p2`, e
+    remove a §14.3.
+
+  O cabeçalho do documento ainda depende de uma decisão do Guilherme (módulo, turma,
+  papéis). O Danilo pode mesclar o !22 e o !25 pela interface.
+- **R3 (#38).** São 12 commits, agora em revisão por um agente. Depois eu subo e abro o MR
+  para você aceitar. Mudanças que afetam você:
+  - O SOM passou para a base de 26 UG: base R$ 30.314, low R$ 7.699, high R$ 55.235,
+    licença R$ 17.657 e piloto inteiro R$ 74.135 (= SAM × 2/12). O TAM e o SAM não mudaram.
+    Atualizei a linha 11 do `FIGURES.md`.
+  - O registro agora tem 14 riscos:
+    - R11 equipe;
+    - R12 validadores;
+    - R13 escala (12 RM e histórico documental; 7 de 16 joins);
+    - R14 adoção sem orçamento.
+
+    O R07 e o R03 caíram de P4 para P3 com a evidência da EDA. Dono do R13: Danilo.
+  - O canvas está sendo redesenhado em inglês no mesmo nome de arquivo
+    (`assets/value_proposition_canvas.jpg`).
+- **Para o seu R2.** A linha de consistência da §3.2 (VPC × Canvas) deve passar a dizer
+  "same". A §4.1 e o Workbook já usam a frase do D13 e não prometem mais dashboard.
