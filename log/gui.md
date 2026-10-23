@@ -394,3 +394,90 @@ de numeração de tabelas e figuras no documento inteiro e abro o MR para você 
   apresentação (!2). A `main` volta ao commit inicial e o deck da `develop` não é afetado.
 - **!28.** O Guilherme confirmou os nomes "Danilo de Castro Neto" e "Johlan Lepy". Pode
   aceitar.
+
+## 23/10 21h45: revisão do !29 — "merge after small fixes"; aplique no próprio !29 e me avise
+
+Tudo é texto. Os itens 1 a 5 precisam entrar antes do parceiro ver. As linhas são da
+branch, commit 6d1413e.
+
+1. **15ª Bda sem o "quando, não o tamanho".**
+   - `use_cases.md:34-36`: "One of the flagged units, the 15th Mechanized Infantry
+     Brigade, takes over the execution of the 33rd Mechanized Infantry Battalion from
+     2019. The battalion committed at most R$ 0.13 million a year until 2018 and the
+     brigade commits R$ 4.03 million to R$ 15.14 million a year from 2019, so the transfer
+     explains when the jump starts, not its size, and the spending stays with the brigade,
+     the executing unit (Q16)."
+   - `data_structure.md:67`: "the 15th Brigade's jump starts when the 33rd Battalion's
+     execution moves to it; the transfer explains the timing, not the size".
+   - `model.dbml:113` e `data_model_canvas.json:167`: acrescente "; the transfer explains
+     when the brigade's jump starts, not its size".
+2. **"How the partner said management works today".**
+   - `documentation.md:670`: "The stories are illustrative. The meeting routines follow
+     the partner's description at the kick-off, but the triggers and decisions are
+     hypothetical, and the workflows of the 2nd and 5th Military Regions still need
+     confirmation with their managers (Q12, Q13)."
+   - `use_cases.md:11`: "The meeting routines (weekly regional briefing, fortnightly
+     national meeting) follow the partner's description at the kick-off; the triggers and
+     the decisions are hypothetical, and the managers of the two regions still have to
+     confirm the workflows they use today (Q12, Q13)." O gatilho do UC2 (planejamento
+     anual de contratos OCS/PSA) não está no kick-off.
+3. **`03_eda.ipynb:1233`: "operational units" está errado.**
+   - Os 69 executores, por `organization_type_2016`, são Operacional 41, Logística 10,
+     Administrativa 4, Serviço Militar 4, Ensino 3, Construção 3, Saúde 3 e C&T 1.
+   - Use: "The other 64 units with health spending are not health organizations;
+     barracks, logistics, administrative, teaching and other units run health actions for
+     their personnel."
+4. **O silver não está agregado no grão.**
+   - A célula do 02 que grava o silver não tem `groupBy`. Ela grava as linhas brutas de
+     saúde (60.935, com lançamentos partidos), `partitionBy("year")` e overwrite total.
+     Confirme no código. Se for assim, ajuste:
+     - `data_structure.md:31`: "Validated health rows of the 69 historical executors
+       (60,935 rows, 150 months) with every code column, Military Region, unit type and
+       real values; the analysis sums them to the declared grain because 1.5% of the rows
+       are split postings."
+     - `model.dbml:35-38`: "Analytical fact at the declared grain, computed from the
+       silver rows (60,935 validated rows) by summing by the grain."
+     - `data_model_canvas.json:116`: tire "zero duplicated grain keys".
+     - `data_model_canvas.json:97`: diga partição por ano com overwrite total.
+     - Nota do silver no `data_flow.puml`/`png`: "Guarantee: validated rows, signed
+       values, 150 months present, 99.5% of cells within R$ 0.05 of the control panel;
+       summed to the declared grain in the analysis."
+5. **"10.829 notes … issued before 2026" é falso.** Por ano: 2022 1, 2023 14, 2024 129,
+   2025 9.642 e 2026 1.043.
+   - `data_structure.md:20`: "the 10,829 commitment notes cited by 2026 payments and
+     absent from the layer (9,786 issued from 2022 to 2025; the absence of the other 1,043,
+     issued in 2026, is still unexplained)".
+   - Troque "because notes issued before 2026" por "mostly because" em `canvas.md:44`,
+     `data_structure.md:48`, `model.dbml:238,305` e na legenda do `model.png`.
+6. **`documentation.md:275`.** Use "…reaches at least one KPI except the process
+   objectives O1 and O5, which stay as open decisions".
+7. **`README.md:14,33`.** São "21 tables", não 22.
+8. **Ressalva do prazo incompleta.** Acrescente "the partner follows commitment to
+   liquidation and liquidation to payment as separate steps" em `canvas.md:59`,
+   `documentation.md:659` (que também não tem os 17,4%), `json:42` (K8) e
+   `value_proposition.md:66`.
+9. **`documentation.md:309`.**
+   - Ponha a frase do D13 por extenso.
+   - Troque "as the partner asked (Q07)" por "Comparisons separate the three hospitals
+     from the other units; the peer groups of Q07 remain the target."
+10. **`json:73` LGPD.** "No clinical or health data on individuals, so the sensitive-data
+    rules of LGPD art. 11 do not apply; the 2026H1 documents hold personal data under art.
+    5, I (names and masked CPF of individual payees), handled by minimization: individuals
+    are counted, never listed or ranked (Q43)."
+11. **`model.dbml:22`.** "Not part of the grain; whether a grain cell carries more than one
+    action is not tested yet."
+12. **Saídas do 02 ainda imprimem "match to the cent".** A decisão de re-executar é sua
+    (P3 do log).
+
+**Nits** (aplique se der):
+- `canvas.md:115`: "next sprint" vira "next phase".
+- `value_proposition.md`: troque os en dashes ("2014–2025", "Jan–Jun") por "to".
+- `data/README.md:65,70`: tire "our numbers" e "until the team confirms".
+- `README.md:31`: data no corpo do texto.
+- Bronze do `data_flow`: "nothing corrected; only Army rows kept".
+- Documentais "Parquet by month": o 01 grava sem partição.
+- `model.png`: "2,259 legal entities" são só os favorecidos de saúde.
+- `data_structure.md:38`: dê o escopo dos gaps (5,7% e 6,5%), que é todas as ações e 65
+  UGE.
+
+Quando subir, me avise aqui que eu confiro e mesclo.
