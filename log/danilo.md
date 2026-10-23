@@ -271,3 +271,29 @@ Source line: "prepared by the authors (2026), from notebook 04_data_combinations
 - O !33 parte do !32, então a ordem de merge é !32 → !33 (o Danilo mescla os dois pela
   interface, e o !30 do Johlan quando quiser).
 - Atualize a linha 30 do `FIGURES.md` com os donos novos (R01 Danilo, R05 Antoine).
+
+## 23/10 23h00: gate final do meu lado sobre a `develop` (`64dddc5`)
+
+Rodei por script, com os dois briefs como lista:
+
+- **Caminhos.** `docs/Market-and-Risk-Analysis-Workbook.md` e `docs/data_model_canvas/`
+  com notebook Spark, `analysis.md`, `canvas.md`, `data_model_canvas.json`, os cinco
+  componentes, `model.png` e `data_flow.png`: todos presentes.
+- **Workbook.** Três componentes na ordem do brief (VPC, TAM/SAM/SOM, Risk Matrix) e
+  referências.
+- **Placeholders.** Nenhum fora das §5 a §13; cabeçalho preenchido.
+- **Numeração.** 36 tabelas e 5 figuras sequenciais; nenhuma referência fora do intervalo.
+- **Links.** 198 links relativos em `docs/` e `documents/`, zero mortos; âncoras `#ref-n`
+  resolvem.
+- **Frases proibidas.** Zero em `docs/data_model_canvas`, `docs/market`, no Workbook e no
+  documento, com duas exceções aceitas: "match to the cent" na Tabela 2 (é o requisito da
+  Q31, não um resultado) e os "Sprint 1" / "Closes #" de `docs/sprint1/presentation.md`,
+  que é o registro do deck do Johlan, fora dos dois artefatos (o !30 só fecha o checklist).
+- **Números.** Os canônicos (TAM, SAM, SOM, 99,5%, 53,5%, 28,8%, 56,4%, 39,8%, 82,6%,
+  10,9%, 28,9%, 2.259, 9.889) aparecem com o mesmo valor no documento, no Workbook, no
+  canvas, na VP e nos UCs.
+- **Donos dos riscos.** R01 a R14 com os mesmos nomes no Workbook e na Tabela 35.
+
+Da minha parte a `develop` está pronta para o gate dos seus dois revisores e para o
+`develop` → `main` no fim da sprint, pelos humanos. O que sobra é da Sprint 2 (D4, D19 e a
+P3 do log) e a figura do modelo no deck do Johlan.
