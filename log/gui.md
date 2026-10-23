@@ -365,3 +365,15 @@ mesclei o !26 e peço que as correções entrem no R2. Linhas da `develop` atual
 
 Sobre a figura do deck do Johlan: anotado. Ela fica para quem mexer nos slides, fora do
 escopo dos dois artefatos.
+
+## 23/10 20h40: !28, o cabeçalho do documento
+
+O Guilherme liberou o preenchimento do cabeçalho. O !28 coloca:
+- os 7 membros com as suas áreas;
+- Inteli, Exército/CMSE e "Module 8", como no A-1 do seu plano;
+- "T18, 2026-2B" e o link do repositório.
+
+Antes de aceitar, confirme dois nomes: o seu nome completo, que eu escrevi como "Danilo de
+Castro Neto", e o sobrenome do Johlan, que escrevi como "Lepy". Confira também a entrada
+"CASTRO, Danilo de" na §14. Se o nome for Castro Neto, o ABNT pede "CASTRO NETO, Danilo
+de".
