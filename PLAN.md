@@ -130,7 +130,7 @@ Cada agente atualiza só as próprias linhas.
 |---|---|---|---|---|---|
 | F0 | humanos | — | — | todos | concluída (`002fec7`) |
 | R1 | danilo | (sem issue, D11) | `docs/correcao-analise-secao-3-3` | !26 | Mesclado |
-| R2 | danilo | (sem issue, D11) | `docs/correcao-componentes-dmc` | !29 | Review: aguarda revisão e aceite do gui (D6) |
+| R2 | danilo | (sem issue, D11) | `docs/correcao-componentes-dmc` | !29 | Mesclado; gate final em `docs/correcao-final-dmc` (!34), aguarda aceite do gui |
 | R3 | gui | #38 | `38-consolidate-…` | !27 | Review: dois revisores-agentes (texto + correções), aguarda aceite do danilo (D6) |
 | R4 | gui | #39 | `39-prioritise-the-regional-managers-in-the-user-profile` | !25 | Review: revisado por agente, aguarda aceite do danilo (D6) |
 | R5 | gui (linguagem) | #34 fecha, #33 ref | `34-write-document-sections-2-1-2-2-2-4-and-3-4-from-the-final-eda` | !22 | Review: aguarda revisão e aceite do danilo (D6) |

@@ -297,3 +297,25 @@ Rodei por script, com os dois briefs como lista:
 Da minha parte a `develop` está pronta para o gate dos seus dois revisores e para o
 `develop` → `main` no fim da sprint, pelos humanos. O que sobra é da Sprint 2 (D4, D19 e a
 P3 do log) e a figura do modelo no deck do Johlan.
+
+## 23/10 23h40: lista do gate aplicada, !34 para você aceitar
+
+- Branch `docs/correcao-final-dmc` a partir da `develop` (`64dddc5`), um commit. Itens 1 a 19
+  da sua lista, com estas notas:
+  - **2 (notebooks).** Troquei os literais das células de código e o texto das saídas
+    salvas do 02, 03 e 04 e o `02_data_quality_issues.csv`, sem re-executar; um rerun
+    agora reproduz a redação revisada dos findings. A P3 do log diz isso.
+  - **5 (modelo).** `liquidation` sem `valor` e com a nota; `payment_invoice` com os campos
+    reais do schema (`codigo_lista`, `codigo_sequencia`, `data_emissao`, valores de
+    lançamento, desconto, juros, dedução e acréscimo; não há número de nota fiscal); a
+    ligação vermelha vai para `current_uge`; sem "G03" no dbml; `model.png` e `data_flow.png`
+    re-renderizados.
+  - **6 (silver).** §3.3, log Q3 e json ajustados: o silver guarda as linhas validadas, a
+    análise agrega; não há row hash; linhagem só no bronze por enquanto.
+  - **18 (dois-pontos).** 31 frases reescritas nas §3.1 a §3.3; a varredura não acha mais
+    nenhum dois-pontos no meio de frase fora de tabelas e código.
+  - **11.** R$ 450 mi por ano no documento e no `analysis.md`; linha 28 do `FIGURES.md`
+    atualizada.
+  - Não feitos, por serem nits sem efeito no barema: fontes da VP e dos UCs em ABNT.
+- Grep do `PLAN.md` vazio nos arquivos tocados; zero links mortos; json válido.
+- Pode conferir e mesclar o !34. Depois disso, do meu lado, a `develop` está fechada.
