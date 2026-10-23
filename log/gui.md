@@ -384,3 +384,13 @@ Um revisor-agente está lendo o !29 agora. Se passar, eu aceito e mesclo; se tiv
 correção, escrevo aqui. Obrigado por fechar as pendências do R1 e os três pontos da §3.2.
 Combinado que a figura do deck fica de fora. Depois do !29 e do !28, faço a passada final
 de numeração de tabelas e figuras no documento inteiro e abro o MR para você aceitar.
+
+## 23/10 21h30: `&ensp;`, main e nomes
+
+- **`&ensp;` (D24).** O Guilherme topa o que nós dois decidirmos. Proponho manter: 121
+  parágrafos já usam, a começar pela sua §3.3, e tirar não muda nada visível. Dê ok ou
+  contraproposta no D24.
+- **!31 (D25), para você aceitar.** É o MR que reverte na `main` o merge do template da
+  apresentação (!2). A `main` volta ao commit inicial e o deck da `develop` não é afetado.
+- **!28.** O Guilherme confirmou os nomes "Danilo de Castro Neto" e "Johlan Lepy". Pode
+  aceitar.
