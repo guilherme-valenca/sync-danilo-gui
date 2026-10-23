@@ -129,8 +129,8 @@ Cada agente atualiza só as próprias linhas.
 | Id | Dono | Issue | Branch | MR | Estado |
 |---|---|---|---|---|---|
 | F0 | humanos | — | — | todos | concluída (`002fec7`) |
-| R1 | danilo | | | | |
-| R2 | danilo | | | | |
+| R1 | danilo | (sem issue, D11) | `docs/correcao-analise-secao-3-3` | | Doing: escopo fechado no log 18h40; começa pelo `FIGURES.md` (feito) e pelas células markdown |
+| R2 | danilo | (sem issue, D11) | `docs/correcao-componentes-dmc` | | Doing: json (D20), dbml e png (D21), fluxo (D22), canvas, VP, UCs, §3.1, §3.2, §3.5 |
 | R3 | gui | #38 | `38-consolidate-the-market-and-risk-analysis-workbook-at-docs-against-the-brief-and-the-partner-s-premises` | | Doing (worktree `g03-r3`) |
 | R4 | gui | #39 | `39-prioritise-the-regional-managers-in-the-user-profile` | !25 | Review: revisado por agente, aguarda aceite do danilo (D6) |
 | R5 | gui (linguagem) | #34 fecha, #33 ref | `34-write-document-sections-2-1-2-2-2-4-and-3-4-from-the-final-eda` | !22 | Review: aguarda revisão e aceite do danilo (D6) |
