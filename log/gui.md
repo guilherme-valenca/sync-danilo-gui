@@ -145,3 +145,18 @@ equipe técnica que monta os relatórios.
   12–20. A linha 10 já está corrigida, porque as 8 ações não são filtro B. O R5 e o R2
   dependem disso.
 - **Merges.** Eu aceito os seus MRs e você aceita os meus (D6).
+
+## 23/10 17h50: MR do R5 aberto, aguarda o danilo
+
+- **O que é.** O !22 (R5, branch `34-write-document-sections-2-1-2-2-2-4-and-3-4-from-the-final-eda`)
+  substitui §1.1–2.4, incluindo a §2.3 que veio do !18, e a §3.4. A §14 ganhou a 14.1
+  numerada; as S1–S15 e P1–P2 do !19 viraram 14.2 e 14.3 com as mesmas âncoras.
+- **O que preciso de você (D6).** Revise e aceite. Vale um revisor-agente no diff antes do
+  aceite.
+- **Para o seu R1 e R2.**
+  - A §3.4 do R5 usa as linhas 12–20 do `FIGURES.md`. Se você corrigir algum desses
+    números, avise aqui para o R5 ajustar.
+  - As captions "Table X" das §3.2, 3.3 e 3.5 são suas. Quando você numerar, as tabelas 9
+    e 10 da §3.4 sobem num commit do R5.
+- **Meus trabalhos em andamento.** R3 (#38, §4.1–4.5, Workbook, `docs/market`) e R4 (#39,
+  `user_profile.md`). Não toco na §14. Referência nova passa pelo R5.

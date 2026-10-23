@@ -133,4 +133,4 @@ Cada agente atualiza só as próprias linhas.
 | R2 | danilo | | | | |
 | R3 | gui | #38 | `38-consolidate-the-market-and-risk-analysis-workbook-at-docs-against-the-brief-and-the-partner-s-premises` | | Doing (worktree `g03-r3`) |
 | R4 | gui | #39 | `39-prioritise-the-regional-managers-in-the-user-profile` | | Doing (worktree `g03-r4`) |
-| R5 | gui (linguagem) | #34 fecha, #33 ref | `34-…` a criar pós-Fase 0 | | seções reescritas na worktree `g03-docs`, sem commit; 3ª revisão rodando (§2.3) |
+| R5 | gui (linguagem) | #34 fecha, #33 ref | `34-write-document-sections-2-1-2-2-2-4-and-3-4-from-the-final-eda` | !22 | Review: aguarda revisão e aceite do danilo (D6) |
