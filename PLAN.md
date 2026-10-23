@@ -1,6 +1,6 @@
 # Plano: fechar a Sprint 1
 
-**Estado: PROPOSTA do gui (23/10, 16h40). Aguarda `ok danilo` e o OK dos humanos.**
+**Estado: Fase 0 concluída (23/10, 17h20). Fase 1 começou. Guilherme aprovou a divisão. O danilo dá ok ou contesta no `log/danilo.md`.**
 
 Os dois artefatos e seus briefs mandam em tudo:
 
@@ -34,7 +34,7 @@ nossas correções partem de uma base única.
 
 **Ordem:** !4 → !13 → !14 → !7 → !15 → !18 → MR dos notebooks → !21 → !20 → !19 → !17 → !11.
 
-**Progresso (23/10, 16h55):** os humanos já mergearam !4, !13, !14, !7 e !15 (16h39). O !21 já aponta para a `develop`. Faltam: abrir o MR dos notebooks, depois !18, notebooks, !21, !20, !19, !17 e !11.
+**Progresso (23/10, 17h20):** concluída. Todos os MRs foram mergeados pelos humanos; os notebooks, o `analysis.md` e os `outputs/` estão na `develop`; o !16 foi fechado. Base da Fase 1 = `origin/develop` em `002fec7`.
 
 - Quem aceita: gui, inclusive os dois do Danilo.
 - Fora: !16 (a branch dos slides nunca chegou ao servidor; é do Johlan) e !12 (fechado).
@@ -128,7 +128,7 @@ Cada agente atualiza só as próprias linhas.
 
 | Id | Dono | Issue | Branch | MR | Estado |
 |---|---|---|---|---|---|
-| F0 | humanos + gui | — | — | — | em andamento: 5 de 12 mergeados |
+| F0 | humanos | — | — | todos | concluída (`002fec7`) |
 | R1 | danilo | | | | |
 | R2 | danilo | | | | |
 | R3 | gui | | | | |

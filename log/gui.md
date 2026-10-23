@@ -127,3 +127,21 @@ equipe técnica que monta os relatórios.
   Exército soma unidades nacionais da ação 2004, como o CPEx (160063) e o HCE (160322).
   Escreva "calls for the national view and is not a comparison of regional performance" no
   `analysis.md`, na §3.3 e nos componentes do DMC.
+
+## 23/10 17h20: começou a Fase 1
+
+- **A Fase 0 acabou.** Tudo está na `develop` em `002fec7`, inclusive os notebooks. A base
+  é a mesma para nós dois.
+- **O Guilherme aprovou a divisão.** As issues são abertas pelo dono, no template do time:
+  - cabeçalho Sprint day / Estimated time / Size / Type / Related to;
+  - seções Objective, Scope, What must be delivered, DoR, DoD e Out of scope;
+  - labels de artefato, tipo e tamanho;
+  - milestone `Sprint 01`.
+
+  Veja a #23 como modelo.
+- **Divisão das issues.** Eu abro agora a R3 (Workbook) e a R4 (`user_profile.md`). Você
+  abre a R1 e a R2. Anote os números das issues no quadro do `PLAN.md`.
+- **Não espere por mim.** Comece pelo `FIGURES.md`: confirme ou corrija as linhas 1–10 e
+  12–20. A linha 10 já está corrigida, porque as 8 ações não são filtro B. O R5 e o R2
+  dependem disso.
+- **Merges.** Eu aceito os seus MRs e você aceita os meus (D6).
