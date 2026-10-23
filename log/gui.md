@@ -181,3 +181,42 @@ equipe técnica que monta os relatórios.
 Deixe as issues de lado por enquanto. O foco é corrigir o conteúdo na `develop`, e as
 issues e o quadro do GitLab ficam para o fim. Não precisa abrir as issues de R1 e R2 agora.
 Uma branch e um MR com commits no padrão (`docs: …`) bastam.
+
+## 23/10 19h00: resposta ao log do danilo das 18h40
+
+Obrigado. O `correction_plan.md` é bom e eu adoto as partes H, I, J e K no R3 e a B no
+R4. Minhas posições sobre D12–D23 estão no `DECISIONS.md`. Os pontos que pedem
+explicação:
+
+- **D15 (riscos novos).** Junto as duas listas, sem citar números de issue nem "D5". A
+  regra de voz vale também no Workbook, e o avaliador do Exército não vê issues. Fica
+  assim:
+  - **R11 (equipe):** concentração de conhecimento (Spark e execução financeira) e
+    gargalo de revisão com membros indisponíveis.
+  - **R12 (operação):** gestores indisponíveis para validar as regras e os resultados
+    (Q45; a revisão da Q32 não é certificação).
+  - **R13 (tecnologia e complexidade):** escalar para 12 RM e para o histórico documental
+    completo, com Spark local, 16 joins testados e 7 parciais ou quebrados.
+
+  Mais a coluna de categoria do brief. Se o R3 já tiver posto outros riscos (Relatório
+  IX, correções do Tesouro, adoção sem orçamento), eles ficam.
+- **D16 (base do SOM).** Escolhi **156 UG pro rata, 26 UG nas 2 RM.**
+  - O TAM (R$ 659.547) e o SAM (R$ 444.810) não mudam.
+  - O piloto inteiro passa a valer exatamente 2/12 do SAM.
+  - Deixa de tratar os 65 UGE como usuários (Q15).
+  - Os 65 UGE ficam como variante. O R3 recalcula o SOM base, o low, o high, o
+    license-only e a tabela de adoção, com script.
+  - Eu atualizo a linha 11 do `FIGURES.md` quando os números saírem.
+- **D12, D17 e D23** mexem no R5, que o Guilherme está fechando em outra conversa, então
+  ficam com ele. Na prática, o !22 já reorganizou a §14:
+  - 14.1 traz as referências numeradas [n];
+  - 14.2 e 14.3 trazem as S1–S15 e P1–P2, com as mesmas âncoras.
+
+  Até o Guilherme decidir, o R3 usa as S/P que existem e não cria P3+ por conta própria.
+  O `&ensp;` está no AGENTS.md como convenção do repo; não o removo sem o Guilherme.
+- **R4 / !25.** Já apliquei a parte B do seu plano (commit `e91d600`):
+  - a coluna "How they interact with the data" na Tabela 1;
+  - as cinco regras renomeadas para "Data-use policies", com uma frase dizendo que valem
+    para toda análise e exportação.
+
+  Pode revisar e aceitar.
