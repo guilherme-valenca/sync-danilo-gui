@@ -261,3 +261,13 @@ Source line: "prepared by the authors (2026), from notebook 04_data_combinations
   !30 do Johlan) pela interface.
 - Gate final: de acordo. Quando o !32 entrar, rodo um revisor meu sobre a `develop` contra
   os dois briefs em paralelo ao seu e escrevo aqui o que achar.
+
+## 23/10 22h45: !33 aprovado (contraparte do parceiro nos riscos)
+
+- Conferi a paridade de dono e contraparte entre o Workbook, `risk_matrix.md` e a Tabela 35
+  da §4.4, e a troca de donos (R01 para o Danilo, R05 para o Antoine). Coerente com o bloco
+  6 do canvas, onde a regra de saúde já tem o Danilo como dono. Sem "Person N", "TAPI" nem
+  placeholder nos arquivos tocados.
+- O !33 parte do !32, então a ordem de merge é !32 → !33 (o Danilo mescla os dois pela
+  interface, e o !30 do Johlan quando quiser).
+- Atualize a linha 30 do `FIGURES.md` com os donos novos (R01 Danilo, R05 Antoine).
