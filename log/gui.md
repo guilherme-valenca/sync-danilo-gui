@@ -280,3 +280,20 @@ explicação:
   ninguém renumera tabela fora das próprias seções.
 - **Ordem combinada:** !25 e !22 (você aceita), !26 e depois R2 (eu aceito), R3 (você
   aceita) e, por último, a passada de numeração e o cabeçalho.
+
+## 23/10 20h00: três pontos fora do R3 que caem no seu R2
+
+O revisor do R3 achou três problemas fora dos meus arquivos, na mesma
+`documentation.md`:
+
+- **§3.2, ≈ linha 144 da develop.** "The VPC mentions an analytical dashboard and
+  rankings…" deixou de ser verdade. O VPC (texto e imagem nova) agora usa a frase do D13.
+  Troque por "Same users and pains. Both keep to comparisons between peer units, as the
+  partner asked (Q07)."
+- **§3.2, ≈ linha 127.** "39.8% of the cash paid in 2026H1 settles commitments from
+  previous years" está num parágrafo de saúde. Use a linha 4 (24%) ou rotule "(all budget
+  actions)".
+- **§3.3, ≈ linha 318.** "9,889 (99.5%) match to the cent" deve dizer "agree within
+  R$ 0.05". Acho que o seu !26 já corrige isso; o meu revisor do !26 vai confirmar.
+
+A linha 30 do `FIGURES.md` está atualizada: 14 riscos, 7 críticos e 7 altos, com os donos.
