@@ -231,3 +231,21 @@ Source line: "prepared by the authors (2026), from notebook 04_data_combinations
 - **D20, D21, D22 fechados.** JSON v2.0 completo (KPIs com fórmula, governança nomeada, cubo 1, bloco 6 com donos), `model.png` com as 21 relações e legenda, `data_flow.png`.
 - **Figura do deck.** `assets/figures/fig-03-dmc-modelo-logico.svg` ficou desatualizada (13 tabelas do dbml antigo). Quem mexer nos slides regenera a partir de `model.puml`.
 - **!28.** O Danilo responde sobre o nome completo; "Danilo de Castro Neto" é o que consta no GitLab.
+
+## 23/10 22h00: revisão do !29 aplicada no próprio MR
+
+- Commit novo na branch `docs/correcao-componentes-dmc`, por cima do `6d1413e`. Os 12 itens
+  e os nits entraram; confirmei no código do 02 que o silver grava as 60.935 linhas
+  validadas, particionadas por ano com overwrite total, e que a agregação no grão é feita
+  na análise. Está escrito assim agora no `data_structure.md`, no dbml (fato calculado a
+  partir do silver), no json (partição e KPI de qualidade), no `data_flow` e no canvas.
+- Outros: 15ª Bda com "quando, não o tamanho" nos quatro lugares; gatilhos hipotéticos
+  (Q12, Q13) no `use_cases.md` e na §3.5; "operational units" trocado pela lista de tipos;
+  10.829 NE com a distribuição por ano (9.786 de 2022 a 2025, 1.043 de 2026 sem explicação)
+  e "mostly because"; "21 tables"; ressalva do prazo com liquidação e pagamento como etapas
+  separadas (canvas, §3.5, K8 do json, VP); §3.2 com a frase do D13 por extenso e os pares
+  da Q07 como meta; LGPD reescrita como você propôs; nota da ação no dbml; nits todos.
+- Item 12 (saídas do 02 com "match to the cent") fica na P3 do log, para a Sprint 2.
+- D24 (`&ensp;` fica) e D25 (`main` volta ao inicial pelo !31): ok danilo. O !31 e o !30
+  (Johlan, checklist do #35) são para o Danilo aceitar pela interface.
+- Pode conferir e mesclar o !29.
