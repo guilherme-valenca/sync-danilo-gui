@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Value Proposition Canvas</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1600px; background: #ffffff; }
+  body {
+    position: relative; height: 990px; overflow: hidden;
+    font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1b1b1b;
+  }
+  .title { position: absolute; left: 24px; top: 20px; }
+  .title h1 { font-size: 32px; font-weight: 700; color: #111; letter-spacing: -0.3px; }
+  .title p { font-size: 18px; margin-top: 6px; color: #333; }
+  .title p b { color: #111; }
+  .label { position: absolute; top: 116px; font-size: 14px; font-weight: 700; letter-spacing: 1.6px; }
+  .vm { color: #1f5f1a; }
+  .cp { color: #9c1414; }
+  svg.shapes { position: absolute; left: 0; top: 0; }
+  .region { position: absolute; }
+  .region .fl { float: left; }
+  .region .fr { float: right; }
+  .region h2 { font-size: 19px; font-weight: 700; margin-bottom: 5px; }
+  .region ul { list-style: none; }
+  .region li { font-size: 13.5px; line-height: 1.32; margin-bottom: 5px; padding-left: 0; }
+  .region li.b::before { content: "\2022"; font-weight: 700; margin-right: 6px; }
+  .region li.c { font-weight: 600; color: #111; }
+  .n {
+    display: inline-block; min-width: 19px; height: 19px; border-radius: 10px;
+    color: #fff; font-size: 12px; font-weight: 700; line-height: 19px; text-align: center;
+    margin-right: 6px; vertical-align: 1px;
+  }
+  .vmr h2 { color: #1f5f1a; } .vmr .n { background: #1f5f1a; }
+  .cpr h2 { color: #9c1414; } .cpr .n { background: #9c1414; }
+  #pr li { font-size: 13px; margin-bottom: 3px; }
+  #pr h2 { margin-bottom: 3px; }
+  .note { position: absolute; left: 24px; top: 938px; font-size: 14px; color: #333; }
+  .note .n { margin-left: 2px; } .note .g { background: #1f5f1a; } .note .r { background: #9c1414; }
+</style>
+</head>
+<body>
+
+<div class="title">
+  <h1>Value Proposition Canvas</h1>
+  <p>Customer segment: <b>Regional managers of the 2nd and 5th Military Regions (primary users)</b></p>
+</div>
+<div class="label vm" style="left:24px">VALUE MAP</div>
+<div class="label cp" style="left:816px">CUSTOMER PROFILE</div>
+
+<svg class="shapes" width="1600" height="990" viewBox="0 0 1600 990">
+  <defs>
+    <marker id="ag" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#1f5f1a"/>
+    </marker>
+    <marker id="ar" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <path d="M0,0 L12,6 L0,12 z" fill="#9c1414"/>
+    </marker>
+  </defs>
+  <!-- value map square -->
+  <rect x="24" y="150" width="760" height="760" fill="none" stroke="#1f5f1a" stroke-width="2.5"/>
+  <line x1="24" y1="150" x2="380" y2="506" stroke="#1f5f1a" stroke-width="2"/>
+  <line x1="24" y1="910" x2="380" y2="554" stroke="#1f5f1a" stroke-width="2"/>
+  <line x1="430" y1="530" x2="778" y2="530" stroke="#1f5f1a" stroke-width="2.5" marker-end="url(#ag)"/>
+  <!-- gift icon at the junction -->
+  <g transform="translate(404,530)" fill="#ffffff" stroke="#1f5f1a" stroke-width="2.5">
+    <rect x="-20" y="-8" width="40" height="30"/>
+    <rect x="-24" y="-18" width="48" height="11"/>
+    <line x1="0" y1="-18" x2="0" y2="22"/>
+    <path d="M0,-18 C-6,-32 -20,-30 -14,-20 C-11,-17 -5,-18 0,-18 z"/>
+    <path d="M0,-18 C6,-32 20,-30 14,-20 C11,-17 5,-18 0,-18 z"/>
+  </g>
+  <!-- customer profile circle -->
+  <circle cx="1196" cy="530" r="380" fill="none" stroke="#9c1414" stroke-width="2.5"/>
+  <line x1="1218" y1="508" x2="1464.7" y2="261.3" stroke="#9c1414" stroke-width="2"/>
+  <line x1="1218" y1="552" x2="1464.7" y2="798.7" stroke="#9c1414" stroke-width="2"/>
+  <line x1="1166" y1="530" x2="822" y2="530" stroke="#9c1414" stroke-width="2.5" marker-end="url(#ar)"/>
+  <!-- face icon at the centre -->
+  <g transform="translate(1196,530)" fill="#ffffff" stroke="#9c1414" stroke-width="2.5">
+    <path d="M-16,-6 C-16,-24 0,-30 10,-26 C24,-20 26,-2 20,10 C16,18 14,22 14,28 L-6,28 L-6,20 C-12,20 -16,18 -16,12 L-16,6 L-22,2 L-16,-6 z"/>
+    <circle cx="-4" cy="-8" r="2.6" fill="#9c1414" stroke="none"/>
+  </g>
+</svg>
+
+<!-- VALUE MAP -->
+<div class="region vmr" id="ps">
+  <h2>Products &amp; Services</h2>
+  <ul>
+    <li class="b">Analytical outputs (infographic sets A and B, reproducible notebooks and documented tables) that complement PI-SSEx and can later feed a dashboard</li>
+    <li class="b">Ingestion and curation pipeline (RAW to CURATED), open-source code and open formats</li>
+    <li class="b">Versioned inclusion rule for health spending, with its coverage reported (indicator C9)</li>
+    <li class="b">Reference layer: OM dimension and RM to OM, brigade to OM and UGE to OM bridges</li>
+    <li class="b">Current and real values (IPCA, December 2025 reais; 2026 kept nominal)</li>
+    <li class="b">Acceptance and reconciliation tests</li>
+  </ul>
+</div>
+
+<div class="region vmr" id="gc">
+  <h2>Gain Creators</h2>
+  <ul>
+    <li class="b">One place to answer a question by RM, UGE or period, without manual consolidation</li>
+    <li class="b">Series comparable over time and across units</li>
+    <li class="b">End-to-end traceability to the source file through the hash of the original zip</li>
+    <li class="b">Objective grounds for planning and accountability</li>
+  </ul>
+</div>
+
+<div class="region vmr" id="pr">
+  <h2>Pain Relievers</h2>
+  <ul>
+    <li class="c">Central: each figure carries its inclusion rule and coverage; variation and concentration indicators (C1 to C10) lead to the records behind each amount</li>
+    <li><span class="n">1</span>Unified pipeline and coverage manifest by UGE, file family and month</li>
+    <li><span class="n">2</span>Historical to current reconciliation, with a rule against double counting</li>
+    <li><span class="n">3</span>Real-value columns (IPCA deflation, 2014 to 2025; 2026 kept nominal)</li>
+    <li><span class="n">4</span>UGE to OM bridges with validity periods; spending stays with the executing UGE until the Army completes the bridge</li>
+    <li><span class="n">5</span>Current-year payments kept apart from carried-over payables</li>
+    <li><span class="n">6</span>Invoice and process-number signals extracted from text, kept as candidate signals, not dimensions</li>
+    <li><span class="n">7</span>Acceptance tests and RAW to governed reconciliation</li>
+  </ul>
+</div>
+
+<!-- CUSTOMER PROFILE -->
+<div class="region cpr" id="ga">
+  <h2>Gains</h2>
+  <ul>
+    <li class="b">A reconciled reference for the figures in scope: each figure shows its source and inclusion rule, which shortens disputes over the right figure; complements PI-SSEx</li>
+    <li class="b">Analyses by RM, UGE, budget plan and expense element in real values, and by OM when the UGE to OM bridge is complete</li>
+    <li class="b">Less time consolidating spreadsheets</li>
+    <li class="b">A view of the cycle from commitment to liquidation, payment and payee</li>
+    <li class="b">Figures that hold up in an audit</li>
+  </ul>
+</div>
+
+<div class="region cpr" id="pa">
+  <h2>Pains</h2>
+  <ul>
+    <li class="c">Central: the perimeter of health spending is not settled, so material variations and concentrations cannot be spotted with confidence</li>
+    <li><span class="n">1</span>Data fragmented across many sources and file families</li>
+    <li><span class="n">2</span>Unstable institutional universe: closures, mergers and changes of region</li>
+    <li><span class="n">3</span>Nominal values distort the reading of trends</li>
+    <li><span class="n">4</span>Ambiguous financial attribution between UGs and OMs</li>
+    <li><span class="n">5</span>Carried-over payables mixed with current-year execution</li>
+    <li><span class="n">6</span>Relevant information locked in free text</li>
+    <li><span class="n">7</span>Low confidence in the figures and weak traceability</li>
+  </ul>
+</div>
+
+<div class="region cpr" id="jo">
+  <h2>Customer Jobs</h2>
+  <ul>
+    <li class="c">Central: identify the public spending verifiably related to health and spot material variations and concentrations by period, unit, procurement object and payee</li>
+    <li class="b">Follow budget execution (committed, liquidated, paid, carried-over payables) by unit, region and year</li>
+    <li class="b">Compare units and regions on equivalent bases</li>
+    <li class="b">Justify and plan budget requests with a reliable history</li>
+    <li class="b">Trace each commitment to its liquidation, payment and final payee</li>
+    <li class="b">Answer oversight and audit requests</li>
+  </ul>
+</div>
+
+<div class="note">Pain relievers <span class="n g">1</span>to<span class="n g" style="margin-left:6px">7</span>answer the pains with the same number <span class="n r">1</span>to<span class="n r" style="margin-left:6px">7</span></div>
+
+<script>
+// Flow each text block inside its shape: two floats carry polygonal
+// shape-outside exclusions built from the region's left and right edges.
+const SX = 24, SY = 150, S = 760, JX = 404, JY = 530;
+const CX = 1196, CY = 530, R = 380, P = 16;
+const circ = dy => Math.sqrt(Math.max(R * R - dy * dy, 0));
+
+function region(id, y0, y1, left, right, padTop) {
+  const el = document.getElementById(id);
+  const step = 4, ys = [];
+  for (let y = y0; y <= y1; y += step) ys.push(y);
+  if (ys[ys.length - 1] !== y1) ys.push(y1);
+  const L = ys.map(left), Rt = ys.map(right);
+  const X0 = Math.min(...L), X1 = Math.max(...Rt), H = y1 - y0;
+  const wL = Math.max(...L) - X0 + 1, wR = X1 - Math.min(...Rt) + 1;
+  el.style.left = X0 + 'px'; el.style.top = y0 + 'px';
+  el.style.width = (X1 - X0) + 'px'; el.style.height = H + 'px';
+  const fl = document.createElement('div'); fl.className = 'fl';
+  fl.style.width = wL + 'px'; fl.style.height = H + 'px';
+  fl.style.shapeOutside = 'polygon(0px 0px,' +
+    ys.map((y, i) => `${L[i] - X0}px ${y - y0}px`).join(',') + `,0px ${H}px)`;
+  const fr = document.createElement('div'); fr.className = 'fr';
+  fr.style.width = wR + 'px'; fr.style.height = H + 'px';
+  const off = X1 - wR;
+  fr.style.shapeOutside = `polygon(${wR}px 0px,` +
+    ys.map((y, i) => `${Rt[i] - off}px ${y - y0}px`).join(',') + `,${wR}px ${H}px)`;
+  const sp = document.createElement('div'); sp.style.height = padTop + 'px';
+  el.prepend(sp); el.prepend(fr); el.prepend(fl);
+  if (wL + wR > X1 - X0) console.log('floats collide in ' + id);
+}
+
+// Products & Services: left triangle
+region('ps', SY + 120, SY + S - 120,
+  y => SX + 14,
+  y => SX + Math.min(y - SY, SY + S - y) - P, 46);
+// Gain Creators: upper right of the square
+region('gc', SY + 60, JY - 40,
+  y => JX + 26,
+  y => SX + S - 16, 40);
+// Pain Relievers: lower right of the square
+region('pr', JY + 28, SY + S - 6,
+  y => JX + 14,
+  y => SX + S - 12, 0);
+// Gains: upper part of the circle, left of the jobs wedge
+region('ga', CY - R + 40, CY - 14,
+  y => CX - circ(CY - y) + P,
+  y => Math.min(CX + (CY - y) - P * 1.5, CX + circ(CY - y) - P), 0);
+// Pains: lower part of the circle, left of the jobs wedge
+region('pa', CY + 14, CY + R - 30,
+  y => CX - circ(y - CY) + P,
+  y => Math.min(CX + (y - CY) - P * 1.5, CX + circ(y - CY) - P), 0);
+// Customer Jobs: right wedge
+region('jo', CY - 215, CY + 215,
+  y => Math.max(CX + Math.abs(y - CY) + P * 1.5, CX + 44),
+  y => CX + circ(y - CY) - P, 0);
+</script>
+</body>
+</html>
