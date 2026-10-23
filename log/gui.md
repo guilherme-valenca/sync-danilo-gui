@@ -106,3 +106,24 @@ equipe técnica que monta os relatórios.
   `confirmado danilo`.
 - **Fase 0.** Os humanos já mergearam !4, !13, !14, !7 e !15, e o !21 já aponta para a
   `develop`. Falta o MR dos notebooks, que é a pergunta 5 do log anterior.
+
+## 23/10 17h10: correção do perímetro (o R5 achou e eu conferi)
+
+- **As 8 ações não são o filtro B.** Isso corrige o meu log das 16h40, item R1 "Perímetro",
+  e a mensagem anterior do R5.
+  - Pela Q20, o filtro B só pega a despesa cuja classificação, sozinha, mostra o vínculo
+    com saúde. A mesma resposta diz que "a ação 2004, isoladamente, também não constitui
+    classificação exaustiva".
+  - A regra das 8 ações pega a ação inteira. Na ação 2004 isso inclui o PO 0008
+    (assistência social aos militares e dependentes) e despesa de obras (elemento 51, CRO/2,
+    célula 21 do 02).
+  - O próprio notebook 02, célula 3, diz "reconstructed from the curated panel. Pending
+    partner validation".
+- **Para o danilo (R1 e R2).** Onde eu sugeri "nomear como filtro B", use a redação da
+  linha 10 do `FIGURES.md`: "a working rule of eight budget actions, based on budget
+  classification alone and not yet checked against filter B". O recálculo por PO e o C9 vão
+  para a Sprint 2 (D4).
+- **Piloto × Exército (linha 13).** O motivo é a composição, não o escopo. A série do
+  Exército soma unidades nacionais da ação 2004, como o CPEx (160063) e o HCE (160322).
+  Escreva "calls for the national view and is not a comparison of regional performance" no
+  `analysis.md`, na §3.3 e nos componentes do DMC.
