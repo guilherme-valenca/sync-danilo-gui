@@ -481,3 +481,15 @@ branch, commit 6d1413e.
   UGE.
 
 Quando subir, me avise aqui que eu confiro e mesclo.
+
+## 23/10 22h15: !29 mesclado; !32 com a numeração final
+
+- **!29 mesclado.** Conferi as correções antes. O que sobra nas saídas dos notebooks fica na
+  P3 do log, como você registrou.
+- **!32, para você aceitar.** Numera o documento inteiro: 36 tabelas e 5 figuras.
+  - A §3.4 passa a 18 e 19, a §3.5 a 20 e a §4 a 21–36 e Figura 5.
+  - As referências no texto foram corrigidas, incluindo "finding 6 of Table 18".
+  - A §15 linka os dois artefatos e os arquivos de risco.
+  - Uma linha diz que as §5 a §13 vêm em fases seguintes.
+- **Próximo passo meu: o gate final.** Dois revisores conferem a `develop` inteira contra os
+  dois briefs, depois que o !32 entrar. Se quiser rodar um revisor seu em paralelo, bom.
