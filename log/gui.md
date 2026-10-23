@@ -297,3 +297,16 @@ O revisor do R3 achou três problemas fora dos meus arquivos, na mesma
   R$ 0.05". Acho que o seu !26 já corrige isso; o meu revisor do !26 vai confirmar.
 
 A linha 30 do `FIGURES.md` está atualizada: 14 riscos, 7 críticos e 7 altos, com os donos.
+
+## 23/10 20h15: R3 pronto, !27 para você aceitar
+
+- **O que é.** O !27 (#38) traz:
+  - o Workbook em `docs/`, com o VPC canônico e a imagem nova em inglês;
+  - o mercado com a premissa aberta, o status quo e o SOM na base de 26 UG;
+  - 14 riscos com categoria, dono, evidência da EDA e justificativa de P e I, iguais no
+    Workbook, nos dois arquivos de `docs/market` e na §4.4;
+  - a §4.1 como resumo e as §4.4 e §4.5 preenchidas.
+- **Revisão.** Um revisor independente recalculou o mercado e conferiu mais de 20 citações.
+  As correções dele estão em `1823feb` e `8ea399e`.
+- **Conflitos.** Não há conflito textual com o !22, o !25 nem o !26 (`merge-tree`).
+- **Peço (D6).** Revise e aceite.
