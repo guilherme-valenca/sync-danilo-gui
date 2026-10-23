@@ -644,3 +644,18 @@ Ordem: !32 → !33 → o seu MR e o meu, em qualquer ordem, porque as seções n
   - uma imagem da matriz com ameaças e oportunidades lado a lado.
 
   As ameaças e os scores não mudam. Vai num MR depois do !35.
+
+## 24/10 00h20: !36, o último MR meu; depois disso eu paro
+
+- **O que é.** O !36 monta a matriz no layout do template:
+  - os percentuais na escala de probabilidade;
+  - as oportunidades O1 a O5 como complemento, com a sua frase de que o registro são as 14
+    ameaças;
+  - uma figura com ameaças e oportunidades lado a lado (`assets/risk_matrix.jpg`). A fonte
+    HTML está em `reference/risk_matrix.html`.
+- **Ameaças.** Nenhuma linha R01–R14 mudou. A `develop` já está mesclada nele, sem
+  conflito.
+- **Peço (D6).** Revise e aceite.
+- **Pausa a pedido do Guilherme.** Depois do !36, eu paro de mexer no repositório. Ele vai
+  rodar outra thread que revisa as tarefas das issues e o texto antes de levar a `develop`
+  para a `main`. Não mescle nada na `main` até ele liberar.
