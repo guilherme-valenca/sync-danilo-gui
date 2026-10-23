@@ -514,3 +514,115 @@ Quando subir, me avise aqui que eu confiro e mesclo.
 - **Base.** O !33 parte do !32. Mescle o !32 primeiro.
 
 Atualizei a linha 30 do `FIGURES.md` com os donos novos.
+
+## 23/10 23h00: gate final (Opus + Sol) — "ready after fixes" nos dois artefatos; lista do R2-bis para você
+
+Os dois revisores leram a `develop` com o !32 e o !33 contra os dois briefs.
+- **O que está limpo:** 416 links sem nenhum quebrado, Tabelas 1–36 e Figuras 1–5 em
+  ordem, o mercado recalculado, 38 Q-citações conferidas e o modelo igual ao png.
+- **O que falta:** correções de texto. Eu conferi pessoalmente o que só um dos dois
+  apontou. Linhas do commit `402d5f6`.
+- **Minha parte:** Workbook, §1–2, §3.4, §4, §14, arquivos de risco, `user_profile.md` e o
+  README da raiz. Vai num MR meu, e você aceita.
+- **Sua parte:** DMC, §3.1–3.3, §3.5 e notebooks. Lista abaixo.
+
+### Sua lista
+
+1. **Afirmações de reconciliação** (os dois revisores apontaram).
+   - `value_proposition.md:81-82` "reconciled to the cent" vira: "Results are reconciled
+     with the partner's comparable control totals and every difference is logged; today
+     9,889 of 9,936 unit-month cells (99.5%) agree within R$ 0.05, a tolerance chosen for
+     the analysis, while Q31 asks for the cent and a cause for each difference, and the 47
+     remaining cells have no identified cause yet."
+2. **Notebooks** (os dois). Com `nbformat` e sem re-executar:
+   - Troque os literais e o texto das saídas salvas:
+     - 03 célula 33: "referral vs in-house (report 9)", "issue #13", "pending partner
+       validation";
+     - 04 célula 31: "without competitive bidding", "30 days" sem os 17,4%, 39,8% sem
+       "all budget actions" e a frase da Bda;
+     - 02 células 25 e 28: "match to the cent";
+     - `outputs/02_data_quality_issues.csv:7`.
+   - Use a mesma redação dos arquivos de findings já revisados. Hoje um rerun sobrescreve
+     os findings revisados com o texto antigo.
+   - Se não der, acrescente na P3: "A rerun before that overwrites the reviewed findings
+     files with the earlier wording."
+3. **Denominador da concentração** (Sol; conferi a célula 17 do 04, `pj.v / pj.v.sum()`).
+   28,8%, 56,4%, 17,9%, 32% e K5 são "of health commitments to legal entities", não "of
+   health commitments".
+   - Afeta `value_proposition.md:62`, `analysis.md:92`, os findings e o K5 do json.
+   - Eu corrijo o Workbook, a §4.1 e a Tabela 19 da §3.4.
+4. **`data_structure.md:13`** (os dois). As porcentagens estão trocadas: "98.2%, 99.5% and
+   100%" para 828, 9.936 e 374.
+5. **Modelo** (Sol; conferi a linha 229).
+   - `liquidation.valor` não existe no cabeçalho de liquidação. Tire o campo e ponha a
+     nota "Amounts are held in liquidation_ne_relation, not in the liquidation header."
+   - A tabela de lista de faturas (`:271`) tem `numero_nota_fiscal`. Confira no schema bruto
+     e use os campos reais.
+   - Ajuste o json `:213` ("liquidation-to-commitment link value"), o `model.puml` e o
+     `model.png`.
+6. **Silver** (Sol).
+   - `documentation.md:489` ainda garante uma linha por grão. Use "Silver preserves
+     validated source rows. The EDA aggregates them to one row per month, executing unit
+     (base UG), budget plan, expense element and investment flag."
+   - `data_quality_log.md:13`: a row-hash não existe; diga isso.
+   - O silver descarta `source_file` (02 `:2606`), mas o json promete linhagem por linha.
+     Ou ajuste o json, ou registre isso.
+7. **Testes do parceiro** (Sol; confira). `data_structure.md:15` e `documentation.md:485`
+   devem dizer que os 34 + 11 testes vêm dos arquivos de validação do parceiro e não foram
+   re-executados neste pipeline.
+8. **"Every relationship"** (Opus). Em `documentation.md:298` e `data_structure.md:48`,
+   diga que o modelo desenha 21 relações (2 parciais, 1 quebrada) e que o catálogo tem 16
+   testes (9/5/2).
+9. **Bda** (Opus).
+   - `data_structure.md:67`: "dated by the bridge (the transfer explains when the jump
+     starts, not its size)".
+   - `documentation.md:593` (Tabela 17): "The manager receives the jump without the
+     transfer that dates it".
+10. **"Nothing filtered"** (Opus). Em `documentation.md:426`, `canvas.md:40` e
+    `data_structure.md:29`: "beyond keeping the Army rows, nothing is filtered or
+    corrected".
+11. **R$ 440 mi/ano** (Opus; conferi: 5,42 bi ÷ 12 = 451,7). Corrija para "about R$ 450
+    million per year" em `documentation.md:497` e na linha 28 do `FIGURES.md`.
+12. **`canvas.md:59`** (os dois). Acrescente "; the 17.4% not yet paid are excluded, so the
+    median understates the interval".
+13. **`value_proposition.md:16`** (Opus). Use "carried-over payables weigh on first-half
+    payments (24% of healthcare payments in January to June 2026)".
+14. **"Small units"** (os dois). Em `value_proposition.md:62`, `04_combination_findings.md:8`
+    e no 04, use "units other than hospitals".
+15. **json.**
+    - `:72` (os dois): "Technical lead, Guilherme Valença (documentation and integration);
+      Danilo Neto leads the data pipeline and André Prado the Canvas and use cases."
+    - `:49`: o ritmo de reuniões é por unidade; as duas semanais são do hospital de São
+      Paulo.
+    - `:260`: o silver é particionado por ano.
+    - `:74`: tire "deliverables".
+    - `model.dbml:1,9`: tire "G03".
+16. **§3.3.** Renomeie as perguntas de negócio de "Q1–Q3" para "BQ1–BQ3" (`:336`,
+    `405-410`, `493`, `538`), porque Q01–Q49 são as respostas do parceiro.
+17. **Log.**
+    - `data_quality_log.md:36` (E4): a causa vira "Hospitals execute most of the health
+      budget".
+    - `use_cases.md:53`: não conclua que a liquidação reflete compras anteriores sem olhar
+      as datas. Use "the technical users inspect the linked commitment dates and delivery
+      records before proposing an explanation".
+18. **Voz.**
+    - Cerca de 39 dois-pontos no meio da frase nas §3.1–3.3 (`:261-555`, por exemplo
+      `336` ×4, `381`, `389`, `410` ×2, `459` ×2, `487`, `493` ×2, `508–512`, `523` ×2,
+      `538–544`, `555`, `294`, `311`).
+    - Datas em `use_cases.md:120` e `README.md:31`.
+    - Tire o "Review record" do `README.md` do DMC.
+19. **Nits.**
+    - `documentation.md:285` (Tabela 10) e `canvas.md:125`: use a frase do D13 por inteiro.
+    - 03 célula 28: tire "used in the Army's own facilities".
+    - `03_eda_findings.md:11`: "dashboards" vira "indicators".
+    - `canvas.md:107`: "the COVID-19 action 21C0".
+    - Acentos de André e Letícia no `canvas.md` e no json.
+    - Legendas do `model.png`: a tabela de favorecidos tem PF e órgãos; as chaves não
+      estão em negrito; a ligação vermelha vai para `historical_executor`.
+    - `documentation.md:748`: troque "R$ -72" por "R$ −72".
+    - Ordem P1, P2, P3 no log.
+    - `documentation.md:296`: "would use".
+    - Sources do `value_proposition.md` e do `use_cases.md` em ABNT.
+    - Conferir: `value_proposition.md:78` (Sol diz "filter A or B"; eu não achei a frase).
+
+Ordem: !32 → !33 → o seu MR e o meu, em qualquer ordem, porque as seções não se cruzam.
