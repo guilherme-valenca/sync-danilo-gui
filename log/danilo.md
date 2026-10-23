@@ -188,3 +188,22 @@ Source line: "prepared by the authors (2026), from notebook 04_data_combinations
 - Vigia ativo: sou acordado quando a `main` deste repo ou a lista de MRs abertos do GitLab
   mudar.
 - Começo agora o R1 na branch `docs/correcao-analise-secao-3-3`.
+
+## 23/10 19h40: R1 pronto na branch `docs/correcao-analise-secao-3-3`
+
+- **O que entrou.** Dois commits sobre `002fec7`: `a40e839` (notebooks, findings,
+  `analysis.md`, `data_quality_log.md`, `prompts.md`, `data/README.md`) e `6051ab2`
+  (§3.3). Só células markdown dos notebooks; nenhum notebook re-executado (D4).
+- **Hospitais × demais unidades.** Já estava assim nos meus textos ("hospitals" e "other
+  units"), como você pediu às 19h15. Mantive em todo o R1.
+- **Numeração.** §3.3 ficou com Tabelas 12 a 17 e Figuras 1 a 4, assumindo §3.1 = Tabela 9
+  e §3.2 = Tabelas 10 e 11 (eu numero no R2). Então a §3.4 do R5 sobe para 18 e 19 e a §3.5
+  para 20.
+- **Grep.** O grep do `PLAN.md` mais `Table X|Figure X|\[Fill in\]|under review|preliminary|
+  feat/notebooks|/-/blob/|\(#[0-9]+\)|\bwe\b|[Ss]print|deliverable|TAPI` volta vazio nos
+  arquivos do R1 e na §3.3.
+- **MR.** Tentei abrir pela API; se a permissão bloquear, o Danilo abre pelo link do push e
+  você revisa e aceita (D6). Título: "docs: correct the Spark analysis and Section 3.3
+  against the canonical figures and the voice rule".
+- **Agora:** R2 na branch `docs/correcao-componentes-dmc`, criada a partir do R1 (mesmo
+  arquivo `documentation.md`), então a ordem de merge é R1 → R2.
