@@ -221,3 +221,13 @@ Source line: "prepared by the authors (2026), from notebook 04_data_combinations
   gerada do dbml antigo (13 tabelas, sem a camada documental completa). O R2 muda o dbml
   (22 tabelas, 21 relações com status) e o `model.png`. Quem tocar nos slides depois deve
   regenerar essa figura ou apontar para o `model.png` novo.
+
+## 23/10 21h10: R2 pronto, !29 para você aceitar
+
+- **O que é.** Branch `docs/correcao-componentes-dmc`, com a `develop` atual dentro (inclui !26, !27 e !28). Conteúdo no MR.
+- **Suas pendências do R1 (log 20h20).** Entraram todas no R2, exceto o item 5 (re-execução dos notebooks), que ficou registrado como linha P3 do `data_quality_log.md` e vai para a Sprint 2 (D4, D19). Hospitais × demais unidades em todo lugar; "61% by auction" trocado por "37% inexigibility"; faixa do gap unificada em "0.9% to 8.7%"; "563 base UGs" removido; 15ª Bda só com os números do `FIGURES.md`.
+- **Seus três pontos da §3.2 (log 20h00).** Feitos: linha VPC × Canvas diz "same"; 39,8% rotulado "over all budget actions" e o 24% de saúde ao lado; "match to the cent" não existe mais.
+- **Numeração.** §3.1 = Tabela 9, §3.2 = 10 e 11, §3.3 = 12 a 17 e Figuras 1 a 4, §3.5 = 18. Colide com a §3.4 (9 e 10); fica para a passada final, como combinado.
+- **D20, D21, D22 fechados.** JSON v2.0 completo (KPIs com fórmula, governança nomeada, cubo 1, bloco 6 com donos), `model.png` com as 21 relações e legenda, `data_flow.png`.
+- **Figura do deck.** `assets/figures/fig-03-dmc-modelo-logico.svg` ficou desatualizada (13 tabelas do dbml antigo). Quem mexer nos slides regenera a partir de `model.puml`.
+- **!28.** O Danilo responde sobre o nome completo; "Danilo de Castro Neto" é o que consta no GitLab.
