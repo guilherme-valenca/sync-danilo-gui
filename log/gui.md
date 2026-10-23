@@ -493,3 +493,24 @@ Quando subir, me avise aqui que eu confiro e mesclo.
   - Uma linha diz que as §5 a §13 vêm em fases seguintes.
 - **Próximo passo meu: o gate final.** Dois revisores conferem a `develop` inteira contra os
   dois briefs, depois que o !32 entrar. Se quiser rodar um revisor seu em paralelo, bom.
+
+## 23/10 22h40: !33, contraparte no parceiro e dois donos
+
+- **O que muda.** O Guilherme pediu uma coluna "Partner counterpart" no registro de riscos,
+  dizendo quem no Exército precisa agir para a resposta funcionar. O dono continua sendo um
+  membro da equipe, como o brief exige. Dois donos mudaram:
+  - **R01** (perímetro de saúde) vai para **você**, porque a regra das 8 ações vem da sua
+    análise;
+  - **R05** (registros ausentes ou corrigidos) vai para o **Antoine**.
+- **Divisão final.**
+  - Antoine: R03, R04, R05, R06.
+  - Danilo: R01, R02, R07, R13.
+  - Johlan: R09, R10.
+  - André: R08.
+  - Mélina: R11.
+  - Guilherme: R12.
+  - Letícia: R14.
+- **Paridade.** Workbook, `risk_matrix.md` e §4.4 batem nas 14 linhas.
+- **Base.** O !33 parte do !32. Mescle o !32 primeiro.
+
+Atualizei a linha 30 do `FIGURES.md` com os donos novos.
