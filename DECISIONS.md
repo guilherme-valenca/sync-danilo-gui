@@ -5,17 +5,17 @@ acrescenta; para mudar uma decisão, abre-se outra que a substitui.
 
 | # | Decisão | Proposta por | ok gui | ok danilo | Humano |
 |---|---|---|---|---|---|
-| D1 | Integrar primeiro, revisar depois: mergear todos os MRs abertos como estão (Fase 0) e corrigir em MRs de revisão | gui | ok | | Guilherme sugeriu |
-| D2 | Divisão por artefato e arquivo: danilo fica com a análise e os componentes do DMC (R1, R2); gui fica com o Workbook, o User Profile e §2.3, e a linguagem (R3, R4, R5) | gui | ok | | |
-| D3 | O `FIGURES.md` é a única fonte de números; o danilo confirma cada linha | gui | ok | | |
-| D4 | Hoje não se re-executa nenhum notebook: só células markdown, via `nbformat`. Os recálculos vão para issues da Sprint 2 (prazo com NE não pagas como censuradas, CNPJ raiz, cobertura C9, causa das 47 células, igualdade exata ao centavo) | gui | ok | | |
-| D5 | O `model.png` é re-renderizado com os 9 Refs visíveis, ou a legenda falsa sai | gui | ok | | |
-| D6 | Ninguém aceita o próprio MR | humanos | ok | | Guilherme |
-| D7 | A §2.3 sai do R4 e vai para o R5. O R4 fica só com o `user_profile.md`, alinhado à §2.3 do R5 | R5 | ok | | |
-| D8 | A regra de voz da documentação (seção em `PLAN.md`) vale para todas as seções e para o Workbook | Guilherme, via R5 | ok | | Guilherme |
-| D9 | O R5 é dono da §14 e mantém todas as referências já presentes na `develop`, com as âncoras | gui | ok | | |
-| D10 | A branch do R5 é `34-<slug>`, com um commit `Refs #33` (§1) e outro `Refs #34` (§2.x, §3.4, §14). O MR fecha a #34 e referencia a #33 | R5 | ok | | |
-| D11 | Excepcionalmente, até o fim da correção não se acompanha issue nem quadro do GitLab. A coordenação acontece aqui; no fim tudo vai para Done de uma vez. Continuam valendo branch + MR para a `develop`, commits `docs: …` e ninguém aceitar o próprio MR | Guilherme | ok | | Guilherme |
+| D1 | Integrar primeiro, revisar depois: mergear todos os MRs abertos como estão (Fase 0) e corrigir em MRs de revisão | gui | ok | ok | Guilherme sugeriu |
+| D2 | Divisão por artefato e arquivo: danilo fica com a análise e os componentes do DMC (R1, R2); gui fica com o Workbook, o User Profile e §2.3, e a linguagem (R3, R4, R5) | gui | ok | ok | |
+| D3 | O `FIGURES.md` é a única fonte de números; o danilo confirma cada linha | gui | ok | ok | |
+| D4 | Hoje não se re-executa nenhum notebook: só células markdown, via `nbformat`. Os recálculos vão para issues da Sprint 2 (prazo com NE não pagas como censuradas, CNPJ raiz, cobertura C9, causa das 47 células, igualdade exata ao centavo) | gui | ok | ok (itens que exigem re-execução vão para a Sprint 2, D19) | |
+| D5 | O `model.png` é re-renderizado com os 9 Refs visíveis, ou a legenda falsa sai | gui | ok | ok | |
+| D6 | Ninguém aceita o próprio MR | humanos | ok | ok | Guilherme |
+| D7 | A §2.3 sai do R4 e vai para o R5. O R4 fica só com o `user_profile.md`, alinhado à §2.3 do R5 | R5 | ok | ok | |
+| D8 | A regra de voz da documentação (seção em `PLAN.md`) vale para todas as seções e para o Workbook | Guilherme, via R5 | ok | ok | Guilherme |
+| D9 | O R5 é dono da §14 e mantém todas as referências já presentes na `develop`, com as âncoras | gui | ok | ok | |
+| D10 | A branch do R5 é `34-<slug>`, com um commit `Refs #33` (§1) e outro `Refs #34` (§2.x, §3.4, §14). O MR fecha a #34 e referencia a #33 | R5 | ok | ok | |
+| D11 | Excepcionalmente, até o fim da correção não se acompanha issue nem quadro do GitLab. A coordenação acontece aqui; no fim tudo vai para Done de uma vez. Continuam valendo branch + MR para a `develop`, commits `docs: …` e ninguém aceitar o próprio MR | Guilherme | ok | ok | Guilherme |
 | D12 | Um só esquema de códigos de fonte no documento, no Workbook e nos arquivos de risco: S1–S15 (públicas, já na §14) e P1–P6 para os documentos do projeto (P1 respostas do kick-off, P2 transcrição, P3 anexo de indicadores, P4 TAPI, P5 README e manifestos do Data Package, P6 Portaria DGP/C Ex 444/2023). Os arquivos de risco deixam de usar S1–S3 com outro significado. O R5 define as âncoras; R1, R2 e R3 aplicam | danilo | | ok | |
 | D13 | Uma só frase para o que a solução entrega, em todos os arquivos (§4.1, Workbook §2, `value_proposition.md`, json bloco 5): "analytical outputs (infographic sets A and B, reproducible notebooks and documented tables) that complement PI-SSEx and can later feed a dashboard". Sai "painel analítico", "accessible dashboards" e "painéis por OM" como produto prometido | danilo | | ok | |
 | D14 | O Workbook §2 contém o VPC inteiro (6 listas, imagem, tabela dor → aliviador, em inglês) porque o brief manda "fill in all sections of the canvas"; a §4.1 vira resumo + evidência e aponta para o Workbook. Aliviadores 4 e 6 e o ganho "painéis por OM" são reescritos conforme C3 e C6 do log de qualidade (ponte com 1 linha; sinais de texto 0% e 23,4%) | danilo | | ok | |
