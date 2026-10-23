@@ -151,3 +151,40 @@ preliminary|feat/notebooks-analise-dados|/-/blob/|To be defined by G03`.
 2. R1 na branch `docs/correcao-analise-secao-3-3`.
 3. R2 na branch `docs/correcao-componentes-dmc`.
 4. Avisar aqui a cada MR aberto, com o grep rodado.
+
+## 23/10 19h00: revisão do !25 e do !22
+
+**!25 (`user_profile.md`): aprovado.** Conferi contra a §2.3 do !22, o `FIGURES.md` (65 UGE,
+69 executores, ponte com 1 linha, regra das 8 ações) e as Q02, Q08, Q10–Q15, Q20–Q22, Q27,
+Q29, Q31, Q36, Q43. Nenhuma divergência. Dois registros, sem bloqueio: (a) "matches the
+control total to the cent" aparece como requisito da Q31, não como resultado, então está
+certo; (b) a frase sobre o dashboard no celular é relatada como sugestão do parceiro, o que
+cabe no D13. A aprovação e o merge pela API foram bloqueados pela permissão do meu modo
+automático; o Danilo aprova e mescla pela interface.
+
+**!22 (§1, §2.1–2.4, §3.4, §14): aprovado com um bloqueio.** O texto está ótimo e usa só
+números confirmados. Bloqueio: a Tabela 10 (§3.4.2) tem `[Pending review]` em todas as
+células. As linhas 3, 5–8 e 24–27 do `FIGURES.md` já estão confirmadas; as seis linhas
+prontas estão abaixo. Depois desse commit o Danilo mescla. Dois follow-ups para o próximo
+commit do R5: o cabeçalho do documento ainda tem os placeholders do template (Team Members,
+Institution, Module, Class, Repository), e P1 e P2 da §14.3 duplicam [1] e [4] da §14.1 (o
+D12 unifica).
+
+### Tabela 10, pronta para colar (en)
+
+| # | Topic | Evidence | Consequence for the project |
+| --- | --- | --- | --- |
+| 1 | Procurement modality of health purchases | In the first half of 2026, inexigibility, the accreditation of providers, accounted for 53.5% of health commitments and the electronic auction for 42.8%. Inexigibility was 37% of the commitments of the health organizations and 82% of those of the operational units. | Accreditation contracts with civilian health organizations and professionals are the main channel to follow, and the procurement modality becomes a dimension of BQ2. |
+| 2 | Concentration of spending in suppliers | 2,259 legal-entity suppliers received health commitments in the first half of 2026, counted per full CNPJ, which makes the concentration a lower bound. The ten largest held 28.8% and the fifty largest 56.4%; 180 suppliers served both regions, with 17.9% of the value. Outside the health organizations, the largest supplier of a unit held a median 32% of its health commitments and more than half in 16 units, against 10% to 17% in the three hospitals. | Supplier dependency per unit becomes an indicator for BQ2 and BQ3. Grouping suppliers by CNPJ root is left for the next sprint. |
+| 3 | Time from commitment to first payment | Of the health commitments issued from January to March 2026, 82.6% had at least one bank order by June. Among those, the median time to the first payment was 30 days and the 90th percentile 75 days: 45 days in the health organizations against 27 in the operational units, and 58 days for consumables against 24 for services. The 17.4% not yet paid are excluded, so the measure understates the interval. | The interval is a process indicator for BQ3, not a measure of care. The partner follows commitment to liquidation and liquidation to payment separately (section 2.2, need 7); those two intervals enter when the liquidation link is verified. |
+| 4 | Share of 2026 cash that settles commitments of earlier years | Of the cash the 65 UGE paid out in the first half of 2026, over all budget actions, 39.8% settled commitments of earlier years, 37.0% from 2025 alone. In health payments, carried-over payables were 24% of the January to June 2026 payments (finding 6 of table 9). | Every payment is dated by the year of its commitment, read from the commitment code, so carried-over payables stay apart from current execution (C7) even when the commitment document is not in the documentary layer. |
+| 5 | Institutional bridges that explain breaks in the series | The 33rd Mechanized Infantry Battalion committed at most R$ 0.13 million a year in health from 2014 to 2018. From 2019 its commitments stop and the 15th Mechanized Infantry Brigade, which the reference bridge records as the unit that administers the battalion, commits between R$ 4.03 million and R$ 15.14 million a year. | The transfer of execution explains when the jump starts, not its size. The analysis chains predecessor and successor units before comparing years and keeps each amount with its executing unit. |
+| 6 | Combinations between datasets that do not work yet | Of 16 combinations tested, 9 work, 5 work partially and 2 do not. Summing the payment header after joining the payment-to-commitment relation inflates payments by 80% (R$ 739.6 million against R$ 411.8 million). The liquidation and payment links reach 68.8% and 66.1% of the cited commitments, because 10,829 of the 31,958 cited commitments, 9,642 of them from 2025, are not in the 2026 layer. The bridge between UGE and organizations has one row, so one of the 65 UGE matches. Invoice text signals match 0% of the payments and process-number signals 23.4% of the commitments. | These links are recorded as open relationships and no indicator is built on them. The value per commitment always comes from the relation table, never from the payment header. |
+
+Source line: "prepared by the authors (2026), from notebook 04_data_combinations<sup>[6](#ref-6)</sup>".
+
+### Estado
+
+- Vigia ativo: sou acordado quando a `main` deste repo ou a lista de MRs abertos do GitLab
+  mudar.
+- Começo agora o R1 na branch `docs/correcao-analise-secao-3-3`.
